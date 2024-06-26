@@ -1,0 +1,38 @@
+
+/* OpenStreet Map Bootstrap v5 */
+
+.rspbld-openstreetmap .osmap {
+	height: 250px;
+	width: 100%;
+}
+.rspbld-openstreetmap .osmap .maptype-control {
+	border: 2px solid rgba(0,0,0,0.2);
+	border-radius: 4px;
+	overflow: hidden;
+}
+.rspbld-openstreetmap .osmap .maptype-control button {
+	background-color: #ffffff;
+	border: none;
+	color: #bbbbbb;
+	font-size: 1.15rem;
+	font-weight: 600;
+	padding: 0.325rem 0.75rem;
+}
+.rspbld-openstreetmap .osmap .maptype-control button:last-of-type {
+	border-left: 1px solid #cccccc;
+}
+.rspbld-openstreetmap .osmap .maptype-control button:hover {
+	background-color: #eeeeee;
+}
+.rspbld-openstreetmap .osmap .maptype-control button.active {
+	color: #000000;
+}
+
+/* Leaflet styling */
+.leaflet-div-icon {
+	background-color: transparent;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

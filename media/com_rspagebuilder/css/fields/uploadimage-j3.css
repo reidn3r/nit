@@ -1,0 +1,75 @@
+.media-preview {
+	height: auto;
+	overflow: hidden;
+}
+.media-preview.no-height {
+	height: 0;
+}
+.image-preview {
+	display: inline-block;
+	padding: 10px;
+	position: relative;
+	right: 0;
+	top: 0;
+}
+.image-preview > img {
+	border: 10px solid #eeeeee;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+}
+.media .remove-media {
+	color: #555555;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.media .remove-media:hover {
+	color: #3071a9;
+}
+#modal-upload-image.modal {
+	left: 50%;
+	margin-left: -340px;
+	width: 680px;
+	z-index: 1054;
+}
+#modal-upload-image.modal .modal-body {
+	height: 480px;
+	max-height: 480px;
+	overflow: hidden;
+	padding: 1px 0px 20px 10px !important;
+}
+#modal-upload-image.modal .modal-body > iframe {
+	border: none;
+	display: block;
+	vertical-align: top;
+}
+.modal-backdrop ~ .modal-backdrop {
+	z-index: 1052;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	#modal-upload-image.modal {
+		margin-left: -35%;
+		width: 70%;
+	}
+}
+
+@media(max-width: 767px) {
+	#modal-upload-image.modal {
+		margin-left: -45%;
+		width: 90%;
+	}
+	#modal-upload-image.modal .modal-body {
+		height: 240px;
+		max-height: 240px;
+	}
+}
+
+@media(max-width: 480px) {
+	#modal-upload-image.modal .modal-body {
+		height: 200px;
+		max-height: 200px;
+	}
+}

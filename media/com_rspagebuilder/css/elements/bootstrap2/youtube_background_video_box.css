@@ -1,0 +1,21 @@
+
+/* YouTube Background Video Box Bootstrap v2 */
+
+.rspbld-youtube-background-box {
+	padding: 10px;
+}
+.rspbld-youtube-background-box .rspbld-title {
+	margin: 0 0 10px 0;
+}
+
+@media (max-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) {
+	.rspbld-youtube-background-box {
+		background-attachment: initial !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) and (-webkit-min-device-pixel-ratio: 2) {
+	.rspbld-youtube-background-box {
+		background-attachment: initial !important;
+	}
+}

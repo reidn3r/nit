@@ -1,0 +1,32 @@
+
+/* Price Box Bootstrap v4 */
+
+.rspbld-price-box .rspbld-icon {
+	border-radius: 0px;
+	background-color: #a12222;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 20px;
+	padding: 10px;
+}
+.rspbld-price-box .rspbld-icon i {
+	text-align: center;
+	height: 1em;
+	width: 1em;
+}
+.rspbld-price-box .rspbld-price {
+	color: #080669;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0px 0px 10px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.rspbld-price-box table tr:first-of-type  > td {
+	border-top: none;
+}
+.rspbld-price-box .table td,  .rspbld-price-box .table th {
+	border-color: #cccccc;
+	text-align: center;
+}

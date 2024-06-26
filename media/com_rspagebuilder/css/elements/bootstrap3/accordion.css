@@ -1,0 +1,6 @@
+
+/* Accordion Bootstrap v3 */
+
+.rspbld-accordion .panel-heading a:hover, .rspbld-accordion .panel-heading a:focus {
+	outline: none;
+}

@@ -1,0 +1,156 @@
+/* RSPageBuilder! Bootstrap v5 */
+
+.rspbld-page, .rspbld-pages {
+	--rspbld-body-bg: #ffffff;
+	--rspbld-border-color-1: #dddddd;
+	--rspbld-border-color-2: #cccccc;
+	--rspbld-border-color-3: #eeeeee;
+	--rspbld-bg-inverse-rgb: 0, 0, 0;
+	--rspbld-text-color: #555555;
+	--rspbld-title-color: #333333;
+	
+	/* Accordion vars */
+	--rspbld-accordion-button-color: #000000;
+	
+	/* Tab vars */
+	--rspbld-tab-nav-bg-color: #f5f5f5;
+	--rspbld-tab-nav-link-color: #112855;
+}
+
+.rspbld-page *, .rspbld-pages .rspbld-page-container * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.rspbld-page .row, .rspbld-pages .rspbld-page-container .row {
+	margin: 0 0 20px 0;
+	position: relative;
+}
+.rspbld-page .row .container, .rspbld-pages .rspbld-page-container .row .container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.rspbld-page .has-overlay, .rspbld-pages .rspbld-page-container .has-overlay {
+	position: relative;
+}
+.rspbld-page .has-overlay .overlay, .rspbld-pages .rspbld-page-container .has-overlay .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+.rspbld-page .has-overlay [class*="col-"], .rspbld-page .has-overlay .rspbld-row-title, .rspbld-page .has-overlay .rspbld-row-title, .rspbld-page .has-overlay .rspbld-row-subtitle, .rspbld-page .has-overlay .rspbld-row-subtitle, .rspbld-pages .rspbld-page-container .has-overlay [class*="col-"], .rspbld-pages .rspbld-page-container .has-overlay .rspbld-row-title, .rspbld-pages .rspbld-page-container .has-overlay .rspbld-row-title, .rspbld-pages .rspbld-page-container .has-overlay .rspbld-row-subtitle, .rspbld-pages .rspbld-page-container .has-overlay .rspbld-row-subtitle {
+	position: relative;
+	z-index: 2;
+}
+.rspbld-page .btn i, .rspbld-page .accordion-toggle i, .rspbld-page .progress i, .rspbld-page .progress-circle i, .rspbld-page .nav-tabs > li > a > i , .rspbld-pages .rspbld-page-container .btn i, .rspbld-pages .rspbld-page-container .accordion-toggle i, .rspbld-pages .rspbld-page-container .progress i, .rspbld-pages .rspbld-page-container .progress-circle i, .rspbld-pages .rspbld-page-container .nav-tabs > li > a > i  {
+	margin-right: 4px;
+}
+.rspbld-pages .rspbld-page-container {
+	margin: 0 0 20px 0;
+}
+.rspbld-pages .rspbld-page-container .wrapper .details {
+	padding: 10px;
+	position: absolute;
+	left: 8px;
+	top: 0;
+	opacity: 0;
+	width: calc(100% - 33px);
+	visibility: hidden;
+	text-align: center;
+	-webkit-transition: opacity .2s linear;
+	-moz-transition: opacity .2s linear;
+	transition: opacity .2s linear;
+	z-index: 99;
+}
+.rspbld-pages .rspbld-page-container .wrapper .details:before {
+	content: '';
+	display: block;
+	background-color: #000000;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	opacity: .75;
+	z-index: -1;
+}
+.rspbld-pages .rspbld-page-container .wrapper:hover .details {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity .2s linear;
+	-moz-transition: opacity .2s linear;
+	transition: opacity .2s linear;
+}
+.rspbld-pages .rspbld-page-container .wrapper .details > .badge {
+	color: #ffffff;
+	font-size: 14px;
+	padding: 4px 6px;
+	margin: 0 3px;
+	text-decoration: none;
+}
+.rspbld-pages .rspbld-page-container .wrapper .preview {
+	border: 1px solid #cccccc;
+	max-height: 300px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding: 10px;
+	position: relative;
+}
+.rspbld-pages .rspbld-page-container .wrapper .preview .container {
+	margin: 10px;
+	width: auto;
+}
+.rspbld-row-title, .rspbld-column-title, .rspbld-title, .rspbld-subtitle, .rspbld-item-title {
+	margin: .5rem 0;
+}
+
+.rspbld-search-result {
+	background-color: #a12222;
+	color: #ffffff;
+}
+
+@media (max-width: 767px) {
+	.rspbld-pages .rspbld-page-container .wrapper .details {
+		width: 100%;
+	}
+	.rspbld-pages .rspbld-page-container .result {
+		margin: 0 0 10px 0;
+	}
+}
+
+@media (max-width: 575px) {
+	.rspbld-pages .rspbld-page-container .wrapper .details > .badge {
+		margin: 3px 0;
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) {
+	.rspbld-page .row, .rspbld-pages .rspbld-page-container .row, .rspbld-page .row > [class*="col-"], .rspbld-pages .rspbld-page-container .row > [class*="col-"], .rspbld-page .row > .container > [class*="col-"], .rspbld-pages .rspbld-page-container .row > .container > [class*="col-"] {
+		background-attachment: initial !important;
+	}
+}
+
+/* General elements styling */
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+.rspbld-image img {
+	width: 100%;
+}
+/* End general elements styling */

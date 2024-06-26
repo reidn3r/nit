@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="general">
+		<field name="type" type="hidden" default="rspbld_openstreetmap" class="rspbld-input"/>
+		<field name="category" type="hidden" default="basic_elements" class="rspbld-input"/>
+	</fieldset>
+	<fieldset name="options">
+		<field name="title" type="text" default="OpenStreetMap Title" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE" description="COM_RSPAGEBUILDER_TITLE_DESC"/>
+		<field name="title_show" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_TITLE_SHOW" description="COM_RSPAGEBUILDER_TITLE_SHOW_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="title_heading" type="list" default="h2" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE_HEADING" description="COM_RSPAGEBUILDER_TITLE_HEADING_DESC">
+			<option value="h1">COM_RSPAGEBUILDER_HEADING_H1</option>
+			<option value="h2">COM_RSPAGEBUILDER_HEADING_H2</option>
+			<option value="h3">COM_RSPAGEBUILDER_HEADING_H3</option>
+			<option value="h4">COM_RSPAGEBUILDER_HEADING_H4</option>
+			<option value="h5">COM_RSPAGEBUILDER_HEADING_H5</option>
+			<option value="h6">COM_RSPAGEBUILDER_HEADING_H6</option>
+		</field>
+		<field name="title_font_size" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE_FONT_SIZE" description="COM_RSPAGEBUILDER_TITLE_FONT_SIZE_DESC"/>
+		<field name="title_font_weight" type="list" default="" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE_FONT_WEIGHT" description="COM_RSPAGEBUILDER_TITLE_FONT_WEIGHT_DESC">
+			<option value="">JNONE</option>
+			<option value="bold">COM_RSPAGEBUILDER_BOLD</option>
+			<option value="normal">COM_RSPAGEBUILDER_NORMAL</option>
+		</field>
+		<field name="title_text_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_TITLE_TEXT_COLOR" description="COM_RSPAGEBUILDER_TITLE_TEXT_COLOR_DESC"/>
+		<field name="title_margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE_MARGIN" description="COM_RSPAGEBUILDER_TITLE_MARGIN_DESC"/>
+		<field name="title_padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE_PADDING" description="COM_RSPAGEBUILDER_TITLE_PADDING_DESC"/>
+		<field name="subtitle" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE" description="COM_RSPAGEBUILDER_SUBTITLE_DESC"/>
+		<field name="subtitle_show" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_SUBTITLE_SHOW" description="COM_RSPAGEBUILDER_SUBTITLE_SHOW_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="subtitle_heading" type="list" default="h3" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE_HEADING" description="COM_RSPAGEBUILDER_SUBTITLE_HEADING_DESC">
+			<option value="h1">COM_RSPAGEBUILDER_HEADING_H1</option>
+			<option value="h2">COM_RSPAGEBUILDER_HEADING_H2</option>
+			<option value="h3">COM_RSPAGEBUILDER_HEADING_H3</option>
+			<option value="h4">COM_RSPAGEBUILDER_HEADING_H4</option>
+			<option value="h5">COM_RSPAGEBUILDER_HEADING_H5</option>
+			<option value="h6">COM_RSPAGEBUILDER_HEADING_H6</option>
+		</field>
+		<field name="subtitle_font_size" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE_FONT_SIZE" description="COM_RSPAGEBUILDER_SUBTITLE_FONT_SIZE_DESC"/>
+		<field name="subtitle_font_weight" type="list" class="rspbld-input" default="" label="COM_RSPAGEBUILDER_SUBTITLE_FONT_WEIGHT" description="COM_RSPAGEBUILDER_SUBTITLE_FONT_WEIGHT_DESC">
+			<option value="">JNONE</option>
+			<option value="bold">COM_RSPAGEBUILDER_BOLD</option>
+			<option value="normal">COM_RSPAGEBUILDER_NORMAL</option>
+		</field>
+		<field name="subtitle_text_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_SUBTITLE_TEXT_COLOR" description="COM_RSPAGEBUILDER_SUBTITLE_TEXT_COLOR_DESC"/>
+		<field name="subtitle_margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE_MARGIN" description="COM_RSPAGEBUILDER_SUBTITLE_MARGIN_DESC"/>
+		<field name="subtitle_padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE_PADDING" description="COM_RSPAGEBUILDER_SUBTITLE_PADDING_DESC"/>
+		<field name="map_latitude" type="text" default="38.00" class="rspbld-input" label="COM_RSPAGEBUILDER_MAP_LATITUDE" description="COM_RSPAGEBUILDER_MAP_LATITUDE_DESC"/>
+		<field name="map_longitude" type="text" default="-97.00" class="rspbld-input" label="COM_RSPAGEBUILDER_MAP_LONGITUDE" description="COM_RSPAGEBUILDER_MAP_LONGITUDE_DESC"/>
+		<field name="map_zoom" type="number" default="3" min="0" class="rspbld-input" label="COM_RSPAGEBUILDER_MAP_ZOOM" description="COM_RSPAGEBUILDER_MAP_ZOOM_DESC"/>
+		<field name="map_theme" type="list" default="normal" class="rspbld-input" label="COM_RSPAGEBUILDER_MAP_THEME" description="COM_RSPAGEBUILDER_MAP_THEME_DESC">
+			<option value="normal">COM_RSPAGEBUILDER_MAP_NORMAL</option>
+			<option value="light">COM_RSPAGEBUILDER_MAP_LIGHT</option>
+			<option value="dark">COM_RSPAGEBUILDER_MAP_DARK</option>
+			<option value="black-white">COM_RSPAGEBUILDER_MAP_BLACK_WHITE</option>
+		</field>
+		<field name="height" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_HEIGHT" description="COM_RSPAGEBUILDER_HEIGHT_DESC"/>
+		<field name="width" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_WIDTH" description="COM_RSPAGEBUILDER_WIDTH_DESC"/>
+		<field name="margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_MARGIN" description="COM_RSPAGEBUILDER_MARGIN_DESC"/>
+		<field name="padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_PADDING" description="COM_RSPAGEBUILDER_PADDING_DESC"/>
+		<field name="class" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_CSS_CLASS" description="COM_RSPAGEBUILDER_CSS_CLASS_DESC"/>
+		<field name="map_scrollwheel" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_MAP_SCROLLWHEEL" description="COM_RSPAGEBUILDER_MAP_SCROLLWHEEL_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="map_draggable" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_MAP_DRAGGABLE" description="COM_RSPAGEBUILDER_MAP_DRAGGABLE_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="map_zoomcontrol" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_MAP_ZOOMCONTROL" description="COM_RSPAGEBUILDER_MAP_ZOOMCONTROL_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="map_maptypecontrol" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_MAP_MAPTYPECONTROL" description="COM_RSPAGEBUILDER_MAP_MAPTYPECONTROL_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="publish" type="radio" class="rspbld-field btn-group btn-group-yesno" label="COM_RSPAGEBUILDER_PUBLISH" description="COM_RSPAGEBUILDER_PUBLISH_DESC" default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+	<fieldset name="item-1">
+		<field name="marker_title-1" type="text" default="Marker Title" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_TITLE" description="COM_RSPAGEBUILDER_MARKER_TITLE_DESC"/>
+		<field name="marker_title_show-1" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_MARKER_TITLE_SHOW" description="COM_RSPAGEBUILDER_MARKER_TITLE_SHOW_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="marker_title_heading-1" type="list" default="h3" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_TITLE_HEADING" description="COM_RSPAGEBUILDER_MARKER_TITLE_HEADING_DESC">
+			<option value="h1">COM_RSPAGEBUILDER_HEADING_H1</option>
+			<option value="h2">COM_RSPAGEBUILDER_HEADING_H2</option>
+			<option value="h3">COM_RSPAGEBUILDER_HEADING_H3</option>
+			<option value="h4">COM_RSPAGEBUILDER_HEADING_H4</option>
+			<option value="h5">COM_RSPAGEBUILDER_HEADING_H5</option>
+			<option value="h6">COM_RSPAGEBUILDER_HEADING_H6</option>
+		</field>
+		<field name="marker_title_font_size-1" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_TITLE_FONT_SIZE" description="COM_RSPAGEBUILDER_MARKER_TITLE_FONT_SIZE_DESC"/>
+		<field name="marker_title_text_color-1" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_MARKER_TITLE_TEXT_COLOR" description="COM_RSPAGEBUILDER_MARKER_TITLE_TEXT_COLOR_DESC"/>
+		<field name="marker_content-1" type="editor" height="350" default="Lorem ipsum dolor sit amet, dolor tollit eum et, id nobis argumentum vix." label="COM_RSPAGEBUILDER_MARKER_CONTENT" description="COM_RSPAGEBUILDER_MARKER_CONTENT_DESC"/>
+		<field name="marker_content_text_color-1" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_MARKER_CONTENT_TEXT_COLOR" description="COM_RSPAGEBUILDER_MARKER_CONTENT_TEXT_COLOR_DESC"/>
+		<field name="marker_address-1" type="text" default="New York, NY, USA" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_ADDRESS" description="COM_RSPAGEBUILDER_MARKER_ADDRESS_DESC"/>
+		<field name="marker_latitude-1" type="text" default="" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_LATITUDE" description="COM_RSPAGEBUILDER_MARKER_LATITUDE_DESC"/>
+		<field name="marker_longitude-1" type="text" default="" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_LONGITUDE" description="COM_RSPAGEBUILDER_MARKER_LONGITUDE_DESC"/>
+		<field name="marker_image-1" type="uploadimage" default="" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_IMAGE" description="COM_RSPAGEBUILDER_MARKER_IMAGE_DESC" addfieldpath="administrator/components/com_rspagebuilder/models/fields/"/>
+		<field name="marker_icon-1" type="iconslist" default="" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_ICON" description="COM_RSPAGEBUILDER_MARKER_ICON_DESC" addfieldpath="administrator/components/com_rspagebuilder/models/fields/"/>
+		<field name="marker_font_size-1" type="number" default="30" min="10" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE_FONT_SIZE" description="COM_RSPAGEBUILDER_SUBTITLE_FONT_SIZE_DESC"/>
+		<field name="marker_color-1" type="color" default="" class="rspbld-input color" label="COM_RSPAGEBUILDER_MARKER_COLOR" description="COM_RSPAGEBUILDER_MARKER_COLOR_DESC"/>
+	</fieldset>
+	<fieldset name="item-2">
+		<field name="marker_title-2" type="text" default="Marker Title" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_TITLE" description="COM_RSPAGEBUILDER_MARKER_TITLE_DESC"/>
+		<field name="marker_title_show-2" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_MARKER_TITLE_SHOW" description="COM_RSPAGEBUILDER_MARKER_TITLE_SHOW_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="marker_title_heading-2" type="list" default="h3" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_TITLE_HEADING" description="COM_RSPAGEBUILDER_MARKER_TITLE_HEADING_DESC">
+			<option value="h1">COM_RSPAGEBUILDER_HEADING_H1</option>
+			<option value="h2">COM_RSPAGEBUILDER_HEADING_H2</option>
+			<option value="h3">COM_RSPAGEBUILDER_HEADING_H3</option>
+			<option value="h4">COM_RSPAGEBUILDER_HEADING_H4</option>
+			<option value="h5">COM_RSPAGEBUILDER_HEADING_H5</option>
+			<option value="h6">COM_RSPAGEBUILDER_HEADING_H6</option>
+		</field>
+		<field name="marker_title_font_size-2" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_TITLE_FONT_SIZE" description="COM_RSPAGEBUILDER_MARKER_TITLE_FONT_SIZE_DESC"/>
+		<field name="marker_title_text_color-2" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_MARKER_TITLE_TEXT_COLOR" description="COM_RSPAGEBUILDER_MARKER_TITLE_TEXT_COLOR_DESC"/>
+		<field name="marker_content-2" type="editor" height="350" default="Lorem ipsum dolor sit amet, dolor tollit eum et, id nobis argumentum vix." label="COM_RSPAGEBUILDER_MARKER_CONTENT" description="COM_RSPAGEBUILDER_MARKER_CONTENT_DESC"/>
+		<field name="marker_content_text_color-2" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_MARKER_CONTENT_TEXT_COLOR" description="COM_RSPAGEBUILDER_MARKER_CONTENT_TEXT_COLOR_DESC"/>
+		<field name="marker_address-2" type="text" default="Los Angeles, LA, USA" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_ADDRESS" description="COM_RSPAGEBUILDER_MARKER_ADDRESS_DESC"/>
+		<field name="marker_latitude-2" type="text" default="" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_LATITUDE" description="COM_RSPAGEBUILDER_MARKER_LATITUDE_DESC"/>
+		<field name="marker_longitude-2" type="text" default="" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_LONGITUDE" description="COM_RSPAGEBUILDER_MARKER_LONGITUDE_DESC"/>
+		<field name="marker_image-2" type="uploadimage" default="" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_IMAGE" description="COM_RSPAGEBUILDER_MARKER_IMAGE_DESC" addfieldpath="administrator/components/com_rspagebuilder/models/fields/"/>
+		<field name="marker_icon-2" type="iconslist" default="" class="rspbld-input" label="COM_RSPAGEBUILDER_MARKER_ICON" description="COM_RSPAGEBUILDER_MARKER_ICON_DESC" addfieldpath="administrator/components/com_rspagebuilder/models/fields/"/>
+		<field name="marker_font_size-2" type="number" default="30" min="10" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE_FONT_SIZE" description="COM_RSPAGEBUILDER_SUBTITLE_FONT_SIZE_DESC"/>
+		<field name="marker_color-2" type="color" default="" class="rspbld-input color" label="COM_RSPAGEBUILDER_MARKER_COLOR" description="COM_RSPAGEBUILDER_MARKER_COLOR_DESC"/>
+	</fieldset>
+</form>

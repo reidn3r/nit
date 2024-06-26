@@ -1,0 +1,30 @@
+
+/* Horizontal Icon Box Bootstrap v2 */
+
+.rspbld-horizontal-icon-box, .rspbld-horizontal-icon-box .rspbld-content-container {
+	overflow: hidden;
+}
+.rspbld-horizontal-icon-box .rspbld-icon {
+	background-color: #080669;
+	border-radius: 0px;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 10px;
+}
+.rspbld-horizontal-icon-box .rspbld-icon i {
+	text-align: center;
+	height: 1em;
+	width: 1em;
+}
+.rspbld-horizontal-icon-box .rspbld-icon.pull-left {
+	margin: 0px 10px 0px 0px;
+}
+.rspbld-horizontal-icon-box .rspbld-icon.pull-right {
+	margin: 0px 0px 0px 10px;
+}
+.rspbld-horizontal-icon-box .rspbld-title {
+	margin-top: 0;
+}
+.rspbld-horizontal-icon-box .rspbld-button {
+	margin-top: 10px;
+}

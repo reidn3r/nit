@@ -1,0 +1,25 @@
+
+/* Testimonial Box Bootstrap v5 */
+
+.rspbld-testimonial-box, .rspbld-testimonial-box .rspbld-content-container {
+	overflow: hidden;
+}
+.rspbld-testimonial-box .rspbld-avatar.float-right {
+	margin: 0 0 0 10px;
+}
+.rspbld-testimonial-box .rspbld-avatar.float-left {
+	margin: 0 10px 0 0;
+}
+.rspbld-testimonial-box .rspbld-avatar img {
+	height: 100%;
+	width: 100%;
+}
+.rspbld-testimonial-box .rspbld-content i, .rspbld-testimonial-box .rspbld-content p {
+	display: inline;
+}
+.rspbld-testimonial-box .rspbld-content .fa-quote-left {
+	margin-right: 4px;
+}
+.rspbld-testimonial-box .rspbld-content .fa-quote-right {
+	margin-left: 4px;
+}

@@ -1,0 +1,20 @@
+
+/* Vertical Icon Box Bootstrap v4 */
+
+.rspbld-vertical-icon-box .rspbld-icon {
+	background-color: #080669;
+	border-radius: 0px;
+	color: #ffffff;
+	display: inline-block;
+	line-height: 1;
+	font-size: 20px;
+	padding: 10px;
+}
+.rspbld-vertical-icon-box .rspbld-icon i {
+	text-align: center;
+	height: 1em;
+	width: 1em;
+}
+.rspbld-vertical-icon-box .rspbld-button  {
+	margin-top: 10px;
+}

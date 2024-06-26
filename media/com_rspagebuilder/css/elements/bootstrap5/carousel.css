@@ -1,0 +1,311 @@
+
+/* Carousel Bootstrap v5 */
+
+.rspbld-carousel .carousel-inner .carousel-item > .row {
+	margin: 0;
+}
+.rspbld-carousel .carousel-inner .carousel-item > .row > [class*="col-md-"] {
+	padding: 0 0.5rem;
+}
+
+/* Fade effect */
+.rspbld-carousel .fade {
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+.rspbld-carousel .fade .carousel-item {
+	filter: alpha(opacity=0);
+	display: block;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	margin: 0 1em;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-ms-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+	z-index: 2;
+}
+.rspbld-carousel .fade .carousel-item.active {
+	filter: alpha(opacity=100);
+	height: auto;
+	opacity: 1;
+}
+/* End Fade effect */
+
+/* Controls */
+.rspbld-carousel .carousel-control-prev, .rspbld-carousel .carousel-control-next {
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	font-size: 20px;
+	height: 35px;
+	width: 35px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	text-decoration: none;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 3;
+}
+.rspbld-carousel .carousel-control-prev:hover, .rspbld-carousel .carousel-control-next:hover {
+	background-color: rgba(0,0,0,0.75);
+}
+.rspbld-carousel .carousel-control-prev {
+	left: 1rem;
+}
+.rspbld-carousel .carousel-control-next {
+	right: 1rem;
+}
+.rspbld-carousel .carousel-control-prev i, .rspbld-carousel .carousel-control-next i {
+	font-size: 1em;
+	height: 1em;
+	width: 1em;
+}
+/* End Controls */
+
+/* Indicators */
+.rspbld-carousel .carousel-indicators {
+	margin: 0;
+	width: 100%;
+}
+.rspbld-carousel .carousel-indicators button {
+	background-color: transparent;
+	border: 2px solid var(--rspbld-text-color);
+	border-radius: 50%;
+	box-sizing: border-box;
+	margin: 0 3px;
+	height: 12px;
+	width: 12px;
+}
+.rspbld-carousel .carousel-indicators button:hover {
+	cursor: pointer;
+}
+.rspbld-carousel .carousel-indicators button.active {
+	background-color: var(--rspbld-text-color);
+}
+.rspbld-carousel .carousel-indicators button:not(.active) {
+	background-color: transparent !important;
+}
+.rspbld-carousel .carousel-indicators[class*="left-"] button:first-child {
+	margin-left: 0;
+}
+.rspbld-carousel .carousel-indicators[class*="right-"] button:last-child {
+	margin-right: 0;
+}
+
+/* Indicators positions */
+
+/* Bottom */
+.rspbld-carousel .carousel-indicators {
+	padding: 0 1rem;
+	z-index: 4;
+}
+.rspbld-carousel .carousel-indicators.center-bottom, .rspbld-carousel .carousel-indicators.left-bottom, .rspbld-carousel .carousel-indicators.right-bottom {
+	bottom: 9px;
+	left: 0;
+	top: auto;
+}
+.rspbld-carousel .carousel-indicators.center-bottom + .carousel-inner .rspbld-item-container, .rspbld-carousel .carousel-indicators.left-bottom + .carousel-inner .rspbld-item-container, .rspbld-carousel .carousel-indicators.right-bottom + .carousel-inner .carousel-item > .rspbld-item-container {
+	padding-bottom: 30px;
+}
+.rspbld-carousel .carousel-indicators.center-bottom {
+	justify-content: center;
+}
+.rspbld-carousel .carousel-indicators.left-bottom {
+	justify-content: left;
+}
+.rspbld-carousel .carousel-indicators.right-bottom {
+	justify-content: right;
+}
+/* End Bottom */
+
+/* Top */
+.rspbld-carousel .carousel-indicators.center-top, .rspbld-carousel .carousel-indicators.left-top, .rspbld-carousel .carousel-indicators.right-top {
+	left: 0;
+	top: 9px;
+}
+.rspbld-carousel .carousel-indicators.center-top + .carousel-inner .rspbld-item-container, .rspbld-carousel .carousel-indicators.left-top + .carousel-inner .rspbld-item-container, .rspbld-carousel .carousel-indicators.right-top + .carousel-inner .carousel-item > .rspbld-item-container {
+	padding-top: 30px;
+}
+.rspbld-carousel .carousel-indicators.center-top {
+	justify-content: center;
+}
+.rspbld-carousel .carousel-indicators.left-top {
+	justify-content: left;
+}
+.rspbld-carousel .carousel-indicators.right-top {
+	justify-content: right;
+}
+/* End Top */
+/* End Indicators positions */
+/* End Indicators */
+
+/* Overlay */
+.rspbld-carousel .rspbld-item-container {
+	position: relative;
+}
+.rspbld-carousel .rspbld-item-container .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+.rspbld-carousel .rspbld-item-container *:not(.overlay) {
+	position: relative;
+	z-index: 2;
+}
+/* End Overlay */
+
+/* Items */
+.rspbld-carousel .carousel-inner .carousel-item:not(.horizontal-image) .rspbld-image {
+	display: inline-block;
+}
+.rspbld-carousel .carousel-inner .carousel-item.horizontal-image .rspbld-image {
+	width: 40%;
+}
+.rspbld-carousel .carousel-inner .carousel-item.horizontal-image .rspbld-image.float-left {
+	margin: 0px 10px 0px 0px;
+}
+.rspbld-carousel .carousel-inner .carousel-item.horizontal-image .rspbld-image.float-right {
+	margin: 0px 0px 0px 10px;
+}
+.rspbld-carousel .carousel-inner .rspbld-item-container .rspbld-button {
+	margin-top: 10px;
+}
+.rspbld-carousel .carousel-inner .carousel-item.horizontal-image > .row > [class*="col-md-"], .rspbld-carousel .carousel-inner .carousel-item.horizontal-image > .row > [class*="col-md-"] .rspbld-item-container, .rspbld-carousel .carousel-inner .carousel-item.horizontal-image > .row > [class*="col-md-"] .rspbld-item-content-container {
+	overflow: hidden;
+}
+/* End Items */
+
+/* One Item At a Time */
+.rspbld-carousel.rspbld-one-item .carousel-inner .carousel-item {
+	-webkit-transition: transform .25s linear;
+	-moz-transition: transform .25s linear;
+	-ms-transition: transform .25s linear;
+	-o-transition: transform .25s linear;
+	transition: transform .25s linear;
+}
+.rspbld-carousel.rspbld-one-item[class*="items-per-slide-"] .carousel-inner > .active.carousel-item-start {
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+.rspbld-carousel.rspbld-one-item[class*="items-per-slide-"] .carousel-inner > .carousel-item-next:not(.carousel-item-start) {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	transform: translateX(100%);
+}
+.rspbld-carousel.rspbld-one-item[class*="items-per-slide-"] .carousel-inner > .active.carousel-item-end {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	transform: translateX(100%);
+}
+.rspbld-carousel.rspbld-one-item[class*="items-per-slide-"] .carousel-inner > .carousel-item-prev:not(.carousel-item-end) {
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+.rspbld-carousel.rspbld-one-item[class*="items-per-slide-"] .carousel-inner > .carousel-item-next, .rspbld-carousel.rspbld-one-item[class*="items-per-slide-"] .carousel-inner > .carousel-item-end {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	transform: translateX(0);
+}
+.rspbld-carousel.rspbld-one-item .carousel-inner > .carousel-item-next > .row > [class^="col-md-"]:not(:last-child), .rspbld-carousel.rspbld-one-item .carousel-inner > .carousel-item-prev > .row > [class^="col-md-"]:not(:first-child) {
+	opacity: 1;
+	filter: alpha(opacity=1);
+	visibility: visible;
+}
+.rspbld-carousel.rspbld-one-item[class*="items-per-slide-"] .carousel-inner .row > [class^="col-md-"]:not(:first-child) {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.rspbld-carousel.rspbld-one-item .carousel-inner .carousel-item > .row > [class*="col-md-"] {
+		padding: 0 1%;
+	}
+
+	/* 2 Items per Slide */
+	.rspbld-carousel.rspbld-one-item.items-per-slide-2 .carousel-inner .active.carousel-item-start {
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+	.rspbld-carousel.rspbld-one-item.items-per-slide-2 .carousel-inner .active.carousel-item-end {
+		-webkit-transform: translateX(50%);
+		-moz-transform: translateX(50%);
+		transform: translateX(50%);
+	}
+
+	/* 3 Items per Slide */
+	.rspbld-carousel.rspbld-one-item.items-per-slide-3 .carousel-inner > .active.carousel-item-start {
+		-webkit-transform: translateX(-33.3333%);
+		-moz-transform: translateX(-33.3333%);
+		transform: translateX(-33.3333%);
+	}
+	.rspbld-carousel.rspbld-one-item.items-per-slide-3 .carousel-inner > .active.carousel-item-end {
+		-webkit-transform: translateX(33.3333%);
+		-moz-transform: translateX(33.3333%);
+		transform: translateX(33.3333%);
+	}
+
+	/* 4 Items per Slide */
+	.rspbld-carousel.rspbld-one-item.items-per-slide-4 .carousel-inner > .active.carousel-item-start {
+		-webkit-transform: translateX(-25%);
+		-moz-transform: translateX(-25%);
+		transform: translateX(-25%);
+	}
+	.rspbld-carousel.rspbld-one-item.items-per-slide-4 .carousel-inner > .active.carousel-item-end {
+		-webkit-transform: translateX(25%);
+		-moz-transform: translateX(25%);
+		transform: translateX(25%);
+	}
+
+	/* 6 Items per Slide */
+	.rspbld-carousel.rspbld-one-item.items-per-slide-6 .carousel-inner > .active.carousel-item-start {
+		-webkit-transform: translateX(-16.6666%);
+		-moz-transform: translateX(-16.6666%);
+		transform: translateX(-16.6666%);
+	}
+	.rspbld-carousel.rspbld-one-item.items-per-slide-6 .carousel-inner > .active.carousel-item-end {
+		-webkit-transform: translateX(16.6666%);
+		-moz-transform: translateX(16.6666%);
+		transform: translateX(16.6666%);
+	}
+
+	/* 12 Items per Slide */
+	.rspbld-carousel.rspbld-one-item.items-per-slide-12 .carousel-inner > .active.carousel-item-start {
+		-webkit-transform: translateX(-8.3333%);
+		-moz-transform: translateX(-8.3333%);
+		transform: translateX(-8.3333%);
+	}
+	.rspbld-carousel.rspbld-one-item.items-per-slide-12 .carousel-inner > .active.carousel-item-end {
+		-webkit-transform: translateX(8.3333%);
+		-moz-transform: translateX(8.3333%);
+		transform: translateX(8.3333%);
+	}
+
+	.rspbld-carousel.rspbld-one-item[class*="items-per-slide-"] .carousel-inner > .carousel-item-start, .rspbld-carousel.rspbld-one-item[class*="items-per-slide-"] .carousel-inner > .carousel-item-end {
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		transform: translateX(0);
+	}
+	.rspbld-carousel.rspbld-one-item .carousel-inner > .carousel-item-next > .row > [class^="col-md-"]:not(:last-child), .rspbld-carousel.rspbld-one-item .carousel-inner > .carousel-item-prev > .row > [class^="col-md-"]:not(:first-child) {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		visibility: hidden;
+	}
+	
+	.rspbld-carousel.rspbld-one-item[class*="items-per-slide-"] .carousel-inner .row > [class^="col-md-"]:not(:first-child) {
+		display: block;
+	}
+}
+/* End One Item At a Time */
+
+.element-preview .rspbld-carousel .carousel-inner .carousel-item > .row {
+	margin: 0;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>com_imageeffectck</name>
+	<ckpro>0</ckpro>
+	<variant>free</variant>
+	<creationDate>October 2017</creationDate>
+	<copyright>Copyright (C) 2017. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<author>Cedric Keiflin</author>
+	<authorEmail>ced1870@gmail.com</authorEmail>
+	<authorUrl>https://www.joomlack.fr</authorUrl>
+	<version>2.4.0</version>
+	<description>Image Effect CK allows you to style your images with ease without coding. Background, colors, etc to apply to any image in one click.</description>
+	<scriptfile>install.php</scriptfile>
+	<administration>
+		<files folder="administrator">
+			<folder>extensions</folder>
+		</files>
+	</administration>
+	<updateservers>
+		<server type="extension" priority="1" name="Image Effect CK Light">https://update.joomlack.fr/imageeffectck_light_update.xml</server>
+	</updateservers>
+</extension>

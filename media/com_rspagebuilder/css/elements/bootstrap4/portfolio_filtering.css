@@ -1,0 +1,71 @@
+
+/* Portfolio Filtering Bootstrap v4 */
+
+.rspbld-portfolio-filtering .rspbld-filter {
+	display: inline-block;
+	margin-left: 1%;
+	padding: 0;
+}
+.rspbld-portfolio-filtering .rspbld-filter li {
+	border-radius: .25rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	list-style: none;
+	padding: 4px 8px;
+}
+.rspbld-portfolio-filtering .rspbld-filter li.active {
+	opacity: .65;
+}
+.rspbld-portfolio-filtering-container {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+.rspbld-portfolio-filtering-container .filtr-item {
+	margin: 0 !important;
+}
+.rspbld-portfolio-filtering-container .filtr-item:first-child {
+	margin-left: 0;
+}
+.rspbld-portfolio-filtering-container .filtr-item a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+.rspbld-portfolio-filtering-container .filtr-item img {
+	filter: grayscale(60%);
+	max-width: 100%;
+	transition: .5s linear;
+}
+.rspbld-portfolio-filtering-container .filtr-item .rspbld-title {
+	margin: 0;
+}
+.rspbld-portfolio-filtering-container .filtr-item .rspbld-content {
+	padding: 10px;
+	margin: 0;
+}
+.rspbld-portfolio-filtering-container .filtr-item:hover img {
+	filter: grayscale(0);
+}
+
+/* Grid sizes */
+.rspbld-portfolio-filtering-container [class^="grid_"] {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.rspbld-portfolio-filtering-container .grid_12 {
+		width: 50%;
+	}
+	.rspbld-portfolio-filtering-container .grid_13 {
+		width: 33.33%;
+	}
+	.rspbld-portfolio-filtering-container .grid_14 {
+		width: 25%;
+	}
+	.rspbld-portfolio-filtering-container .grid_16 {
+		width: 16.66%;
+	}
+}
+/* End grid sizes */

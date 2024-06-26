@@ -1,0 +1,44 @@
+
+/* List Bootstrap v5 */
+
+.rspbld-list ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.rspbld-list ul > li {
+	display : table;
+}
+.rspbld-list.text-center ul > li {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+.rspbld-list.text-left ul > li {
+	margin-left: 0 !important;
+	margin-right: auto !important;
+}
+.rspbld-list.text-right ul > li {
+	margin-left: auto !important;
+	margin-right: 0 !important;
+}
+.rspbld-list .rspbld-icon {
+	background-color: transparent;
+	color: inherit;
+	font-size: 14px;
+	margin: 3px 5px 0 0;
+	padding: 0;
+	vertical-align: top;
+}
+.rspbld-list .rspbld-icon i {
+	display: block;
+	height: 1em;
+	width: 1em;
+	text-align: center;
+}
+.rspbld-list .right .rspbld-icon {
+	margin: 5px 0 0 5px;
+}
+.rspbld-list .rspbld-icon-container, .rspbld-list .rspbld-content-container {
+	display: table-cell;
+	vertical-align: top;
+}

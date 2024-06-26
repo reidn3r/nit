@@ -1,0 +1,74 @@
+.media {
+	display: block !important;
+}
+.media > a.modal {
+	width: auto;
+}
+.media-preview {
+	height: auto;
+	overflow: hidden;
+}
+.media-preview.no-height {
+	height: 0;
+}
+.image-preview {
+	display: inline-block;
+	padding: 12px 12px 12px 0;
+	position: relative;
+	right: 0;
+	top: 0;
+}
+.image-preview > img {
+	border: 10px solid var(--rspbld-border-color-3);
+	max-width: 100%;
+}
+.media .remove-media {
+	color: var(--rspbld-text-color);
+	font-size: 1.5rem;
+	position: absolute;
+	right: -4px;
+	top: -8px;
+}
+.media .remove-media:hover {
+	color: #3071a9;
+}
+.media .remove-media i {
+	font-size: 1em;
+	height: 1em;
+	width: 1em;
+	line-height: 1;
+}
+#modal-upload-image.modal {
+	z-index: 1101;
+}
+#modal-upload-image.modal .modal-body {
+	height: 480px;
+	max-height: 480px;
+	overflow: hidden;
+	padding: 1px 0px 20px 10px !important;
+}
+#modal-upload-image.modal .modal-body > iframe {
+	border: none;
+	display: block;
+	vertical-align: top;
+}
+#modal-upload-image joomla-field-mediamore {
+	display: none;
+}
+.modal-backdrop ~ .modal-backdrop {
+	z-index: 1100;
+}
+
+@media(max-width: 767px) {
+	#modal-upload-image.modal .modal-body {
+		height: 240px;
+		max-height: 240px;
+	}
+}
+
+@media(max-width: 575px) {
+	#modal-upload-image.modal .modal-body {
+		height: 200px;
+		max-height: 200px;
+	}
+}

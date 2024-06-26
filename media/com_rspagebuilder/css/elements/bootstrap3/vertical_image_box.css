@@ -1,0 +1,13 @@
+
+/* Vertical Image Box Bootstrap v3 */
+
+.rspbld-vertical-image-box.text-center .rspbld-image {
+	margin-left: auto;
+	margin-right: auto;
+}
+.rspbld-vertical-image-box.text-right .rspbld-image {
+	margin-left: auto;
+}
+.rspbld-vertical-image-box .rspbld-button  {
+	margin-top: 10px;
+}

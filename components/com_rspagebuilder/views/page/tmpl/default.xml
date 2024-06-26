@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_RSPAGEBUILDER_PAGE_VIEW_DEFAULT_TITLE">
+		<message><![CDATA[COM_RSPAGEBUILDER_PAGE_VIEW_DEFAULT_DESC]]></message>
+	</layout>
+	<fields name="request">
+		<fieldset	name="request"
+					addfieldpath="/administrator/components/com_rspagebuilder/models/fields">
+			<field	name="id" type="modal_page"
+					label="COM_RSPAGEBUILDER_FIELD_SELECT_PAGE_LABEL"
+					required="true"
+					edit="false"
+					clear="false"
+					description="COM_RSPAGEBUILDER_FIELD_SELECT_PAGE_DESC"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

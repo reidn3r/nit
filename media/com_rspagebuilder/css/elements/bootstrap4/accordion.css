@@ -1,0 +1,42 @@
+
+/* Accordion Bootstrap v4 */
+
+.rspbld-accordion .card {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	box-shadow: none;
+}
+.rspbld-accordion .card:first-of-type {
+	border-radius: .25rem .25rem 0 0;
+	border-bottom: none
+}
+.rspbld-accordion .card:last-of-type {
+	border-radius: 0 0 .25rem .25rem;
+}
+.rspbld-accordion .card:not(:last-of-type) {
+	border-bottom: none;
+}
+.rspbld-accordion .card-header {
+	background-color: rgba(0, 0, 0, .03);
+	border-bottom: 1px solid #ccc;
+	box-shadow: none;
+	margin-bottom: -1px;
+	padding: .75rem 1.25rem;
+}
+.rspbld-accordion .card-body {
+	box-shadow: none;
+}
+.rspbld-accordion .btn-link {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	color: #006898;
+	display: block;
+	line-height: 1.25;
+	padding: .375rem .75rem;
+	text-align: left;
+}
+.rspbld-accordion .btn-link:hover {
+	color: #00344c;
+}

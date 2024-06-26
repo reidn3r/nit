@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="general">
+		<field name="type" type="hidden" default="rspbld_personal_box" class="rspbld-input"/>
+		<field name="category" type="hidden" default="box_elements" class="rspbld-input"/>
+	</fieldset>
+	<fieldset name="options">
+		<field name="title" type="text" default="Personal Box Title" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE" description="COM_RSPAGEBUILDER_TITLE_DESC"/>
+		<field name="title_show" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_TITLE_SHOW" description="COM_RSPAGEBUILDER_TITLE_SHOW_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="title_heading" type="list" default="h2" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE_HEADING" description="COM_RSPAGEBUILDER_TITLE_HEADING_DESC">
+			<option value="h1">COM_RSPAGEBUILDER_HEADING_H1</option>
+			<option value="h2">COM_RSPAGEBUILDER_HEADING_H2</option>
+			<option value="h3">COM_RSPAGEBUILDER_HEADING_H3</option>
+			<option value="h4">COM_RSPAGEBUILDER_HEADING_H4</option>
+			<option value="h5">COM_RSPAGEBUILDER_HEADING_H5</option>
+			<option value="h6">COM_RSPAGEBUILDER_HEADING_H6</option>
+		</field>
+		<field name="title_font_size" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE_FONT_SIZE" description="COM_RSPAGEBUILDER_TITLE_FONT_SIZE_DESC"/>
+		<field name="title_font_weight" type="list" class="rspbld-input" default="" label="COM_RSPAGEBUILDER_TITLE_FONT_WEIGHT" description="COM_RSPAGEBUILDER_TITLE_FONT_WEIGHT_DESC">
+			<option value="">JNONE</option>
+			<option value="bold">COM_RSPAGEBUILDER_BOLD</option>
+			<option value="normal">COM_RSPAGEBUILDER_NORMAL</option>
+		</field>
+		<field name="title_text_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_TITLE_TEXT_COLOR" description="COM_RSPAGEBUILDER_TITLE_TEXT_COLOR_DESC"/>
+		<field name="title_margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE_MARGIN" description="COM_RSPAGEBUILDER_TITLE_MARGIN_DESC"/>
+		<field name="title_padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE_PADDING" description="COM_RSPAGEBUILDER_TITLE_PADDING_DESC"/>
+		<field name="subtitle" type="text" default="Personal Box Subtitle" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE" description="COM_RSPAGEBUILDER_SUBTITLE_DESC"/>
+		<field name="subtitle_show" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_SUBTITLE_SHOW" description="COM_RSPAGEBUILDER_SUBTITLE_SHOW_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="subtitle_heading" type="list" default="h3" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE_HEADING" description="COM_RSPAGEBUILDER_SUBTITLE_HEADING_DESC">
+			<option value="h1">COM_RSPAGEBUILDER_HEADING_H1</option>
+			<option value="h2">COM_RSPAGEBUILDER_HEADING_H2</option>
+			<option value="h3">COM_RSPAGEBUILDER_HEADING_H3</option>
+			<option value="h4">COM_RSPAGEBUILDER_HEADING_H4</option>
+			<option value="h5">COM_RSPAGEBUILDER_HEADING_H5</option>
+			<option value="h6">COM_RSPAGEBUILDER_HEADING_H6</option>
+		</field>
+		<field name="subtitle_font_size" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE_FONT_SIZE" description="COM_RSPAGEBUILDER_SUBTITLE_FONT_SIZE_DESC"/>
+		<field name="subtitle_font_weight" type="list" class="rspbld-input" default="" label="COM_RSPAGEBUILDER_SUBTITLE_FONT_WEIGHT" description="COM_RSPAGEBUILDER_SUBTITLE_FONT_WEIGHT_DESC">
+			<option value="">JNONE</option>
+			<option value="bold">COM_RSPAGEBUILDER_BOLD</option>
+			<option value="normal">COM_RSPAGEBUILDER_NORMAL</option>
+		</field>
+		<field name="subtitle_text_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_SUBTITLE_TEXT_COLOR" description="COM_RSPAGEBUILDER_SUBTITLE_TEXT_COLOR_DESC"/>
+		<field name="subtitle_margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE_MARGIN" description="COM_RSPAGEBUILDER_SUBTITLE_MARGIN_DESC"/>
+		<field name="subtitle_padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE_PADDING" description="COM_RSPAGEBUILDER_SUBTITLE_PADDING_DESC"/>
+		<field name="image" type="uploadimage" default="media/com_rspagebuilder/images/sample/220x220-1.jpg" class="rspbld-input" label="COM_RSPAGEBUILDER_IMAGE_SELECT" description="COM_RSPAGEBUILDER_IMAGE_SELECT_DESC" addfieldpath="administrator/components/com_rspagebuilder/models/fields/"/>
+		<field name="image_alt_text" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_IMAGE_ALT_TEXT" description="COM_RSPAGEBUILDER_IMAGE_ALT_TEXT_DESC"/>
+		<field name="image_height" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_IMAGE_HEIGHT" description="COM_RSPAGEBUILDER_IMAGE_HEIGHT_DESC"/>
+		<field name="image_width" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_IMAGE_WIDTH" description="COM_RSPAGEBUILDER_IMAGE_WIDTH_DESC"/>
+		<field name="image_margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_IMAGE_MARGIN" description="COM_RSPAGEBUILDER_IMAGE_MARGIN_DESC"/>
+		<field name="image_padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_IMAGE_PADDING" description="COM_RSPAGEBUILDER_IMAGE_PADDING_DESC"/>
+		<field name="content" type="editor" height="350" default="Lorem ipsum dolor sit amet, dolor tollit eum et, id nobis argumentum vix. His quaeque patrioque philosophia ut, cu has facete everti inimicus. Ne mei dissentiet eloquentiam contentiones, et quot delenit torquatos usu. Alii omittam assentior eam ad. Populo invidunt invenire per an." label="COM_RSPAGEBUILDER_CONTENT" description="COM_RSPAGEBUILDER_CONTENT_DESC"/>
+		<field name="content_text_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_CONTENT_TEXT_COLOR" description="COM_RSPAGEBUILDER_CONTENT_TEXT_COLOR_DESC"/>
+		<field name="content_margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_CONTENT_MARGIN" description="COM_RSPAGEBUILDER_CONTENT_MARGIN_DESC"/>
+		<field name="content_padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_CONTENT_PADDING" description="COM_RSPAGEBUILDER_CONTENT_PADDING_DESC"/>
+		<field name="social_facebook" type="text" default="https://www.facebook.com/rsjoomla" class="rspbld-input" label="COM_RSPAGEBUILDER_FACEBOOK" description="COM_RSPAGEBUILDER_FACEBOOK_DESC"/>
+		<field name="social_twitter" type="text" default="https://twitter.com/rsjoomla" class="rspbld-input" label="COM_RSPAGEBUILDER_TWITTER" description="COM_RSPAGEBUILDER_TWITTER_DESC"/>
+		<field name="social_linkedin" type="text" default="https://www.linkedin.com/company/rsjoomla-com" class="rspbld-input" label="COM_RSPAGEBUILDER_LINKEDIN" description="COM_RSPAGEBUILDER_LINKEDIN_DESC"/>
+		<field name="social_instagram" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_INSTAGRAM" description="COM_RSPAGEBUILDER_INSTAGRAM_DESC"/>
+		<field name="social_youtube" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_YOUTUBE" description="COM_RSPAGEBUILDER_YOUTUBE_DESC"/>
+		<field name="social_tumblr" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_TUMBLR" description="COM_RSPAGEBUILDER_TUMBLR_DESC"/>
+		<field name="social_vimeo" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_VIMEO" description="COM_RSPAGEBUILDER_VIMEO_DESC"/>
+		<field name="social_flickr" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_FLICKR" description="COM_RSPAGEBUILDER_FLICKR_DESC"/>
+		<field name="social_pinterest" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_PINTEREST" description="COM_RSPAGEBUILDER_PINTEREST_DESC"/>
+		<field name="social_icons_target" type="list" default="_blank" class="rspbld-input" label="COM_RSPAGEBUILDER_SOCIAL_ICONS_TARGET" description="COM_RSPAGEBUILDER_SOCIAL_ICONS_TARGET_DESC">
+			<option value="">COM_RSPAGEBUILDER_TARGET_SAME_WINDOW</option>
+			<option value="_blank">COM_RSPAGEBUILDER_TARGET_NEW_WINDOW</option>
+		</field>
+		<field name="social_icons_font_size" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_SOCIAL_ICONS_FONT_SIZE" description="COM_RSPAGEBUILDER_SOCIAL_ICONS_FONT_SIZE_DESC"/>
+		<field name="social_icons_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_SOCIAL_ICONS_COLOR" description="COM_RSPAGEBUILDER_SOCIAL_ICONS_COLOR_DESC"/>
+		<field name="social_icons_background_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_SOCIAL_ICONS_BACKGROUND_COLOR" description="COM_RSPAGEBUILDER_SOCIAL_ICONS_BACKGROUND_COLOR_DESC"/>
+		<field name="social_icons_margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_SOCIAL_ICONS_MARGIN" description="COM_RSPAGEBUILDER_SOCIAL_ICONS_MARGIN_DESC"/>
+		<field name="social_icons_padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_SOCIAL_ICONS_PADDING" description="COM_RSPAGEBUILDER_SOCIAL_ICONS_PADDING_DESC"/>
+		<field name="social_icons_position" type="list" default="after-content" class="rspbld-input" label="COM_RSPAGEBUILDER_SOCIAL_ICONS_POSITION" description="COM_RSPAGEBUILDER_SOCIAL_ICONS_POSITION_DESC">
+			<option value="after-content">COM_RSPAGEBUILDER_AFTER_CONTENT</option>
+			<option value="before-content">COM_RSPAGEBUILDER_BEFORE_CONTENT</option>
+		</field>
+		<field name="box_background_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_BOX_BACKGROUND_COLOR" description="COM_RSPAGEBUILDER_BOX_BACKGROUND_COLOR_DESC"/>
+		<field name="box_margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_BOX_MARGIN" description="COM_RSPAGEBUILDER_BOX_MARGIN_DESC"/>
+		<field name="box_padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_BOX_PADDING" description="COM_RSPAGEBUILDER_BOX_PADDING_DESC"/>
+		<field name="box_alignment" type="list" default="text-center" class="rspbld-input" label="COM_RSPAGEBUILDER_BOX_ALIGNMENT" description="COM_RSPAGEBUILDER_BOX_ALIGNMENT_DESC">
+			<option value="text-center">COM_RSPAGEBUILDER_CENTER</option>
+			<option value="text-left">COM_RSPAGEBUILDER_LEFT</option>
+			<option value="text-right">COM_RSPAGEBUILDER_RIGHT</option>
+		</field>
+		<field name="class" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_CSS_CLASS" description="COM_RSPAGEBUILDER_CSS_CLASS_DESC"/>
+		<field name="publish" type="radio" class="rspbld-field btn-group btn-group-yesno" label="COM_RSPAGEBUILDER_PUBLISH" description="COM_RSPAGEBUILDER_PUBLISH_DESC" default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+</form>

@@ -1,0 +1,130 @@
+/* RSPageBuilder! Bootstrap v2 */
+
+.rspbld-page *, .rspbld-pages .rspbld-page-container * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.rspbld-page .row-fluid, .rspbld-page .row, .rspbld-pages .rspbld-page-container .row-fluid, .rspbld-pages .rspbld-page-container .row {
+	margin: 0 0 20px 0;
+	position: relative;
+}
+.rspbld-page .row-fluid.has-overlay .overlay, .rspbld-page .row.has-overlay .overlay, .rspbld-pages .rspbld-page-container .row-fluid.has-overlay .overlay, .rspbld-pages .rspbld-page-container .row.has-overlay .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+.rspbld-page .row-fluid.has-overlay [class*="span"], .rspbld-page .row.has-overlay [class*="col-"], .rspbld-page .row-fluid.has-overlay .rspbld-row-title, .rspbld-page .row.has-overlay .rspbld-row-title, .rspbld-page .row-fluid.has-overlay .rspbld-row-subtitle, .rspbld-page .row.has-overlay .rspbld-row-subtitle, .rspbld-pages .rspbld-page-container .row-fluid.has-overlay [class*="span"], .rspbld-pages .rspbld-page-container .row.has-overlay [class*="col-"], .rspbld-pages .rspbld-page-container .row-fluid.has-overlay .rspbld-row-title, .rspbld-pages .rspbld-page-container .row.has-overlay .rspbld-row-title, .rspbld-pages .rspbld-page-container .row-fluid.has-overlay .rspbld-row-subtitle, .rspbld-pages .rspbld-page-container .row.has-overlay .rspbld-row-subtitle {
+	position: relative;
+	z-index: 2;
+}
+.rspbld-page .row-fluid [class*="span"]:first-of-type, .rspbld-pages .rspbld-page-container .row-fluid [class*="span"]:first-of-type {
+	margin-left: 0;
+}
+.rspbld-page .btn i, .rspbld-page .accordion-toggle i, .rspbld-page .progress i, .rspbld-page .progress-circle i, .rspbld-page .nav-tabs > li > a > i , .rspbld-pages .rspbld-page-container .btn i, .rspbld-pages .rspbld-page-container .accordion-toggle i, .rspbld-pages .rspbld-page-container .progress i, .rspbld-pages .rspbld-page-container .progress-circle i, .rspbld-pages .rspbld-page-container .nav-tabs > li > a > i  {
+	margin-right: 4px;
+	vertical-align: middle;
+}
+.rspbld-pages .rspbld-page-container {
+	margin: 0 0 20px 0;
+}
+.rspbld-pages .rspbld-page-container .wrapper .details {
+	padding: 10px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	width: calc(100% - 18px);
+	visibility: hidden;
+	text-align: center;
+	-webkit-transition: opacity .2s linear;
+	-moz-transition: opacity .2s linear;
+	transition: opacity .2s linear;
+	z-index: 99;
+}
+.rspbld-pages .rspbld-page-container .wrapper .details:before {
+	content: '';
+	display: block;
+	background-color: #000000;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	opacity: .75;
+	z-index: -1;
+}
+.rspbld-pages .rspbld-page-container .wrapper:hover .details {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity .2s linear;
+	-moz-transition: opacity .2s linear;
+	transition: opacity .2s linear;
+}
+.rspbld-pages .rspbld-page-container .wrapper .details > .label {
+	color: #ffffff;
+	font-size: 12px;
+	padding: 4px 6px;
+	margin: 0 3px;
+	text-decoration: none;
+}
+.rspbld-pages .rspbld-page-container .wrapper .preview {
+	border: 1px solid #cccccc;
+	max-height: 300px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding: 10px;
+	position: relative;
+}
+.rspbld-pages .rspbld-page-container .wrapper .preview .container {
+	margin: 10px;
+	width: auto;
+}
+
+.rspbld-search-result {
+	background-color: #a12222;
+	color: #ffffff;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.rspbld-pages .rspbld-page-container .wrapper .details {
+		width: 100%;
+	}
+}
+ 
+@media (max-width: 767px) {
+	.rspbld-pages .rspbld-page-container .wrapper .details {
+		width: 100%;
+	}
+	.rspbld-pages .rspbld-page-container .result {
+		margin: 0 0 10px 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.rspbld-pages .rspbld-page-container .wrapper .details > .label {
+		margin: 3px 0;
+		width: 100%;
+	}
+}
+
+@media (max-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) {
+	.rspbld-page .row-fluid, .rspbld-page .row, .rspbld-pages .rspbld-page-container .row-fluid, .rspbld-pages .rspbld-page-container .row, .rspbld-page .row-fluid > [class*="span"], .rspbld-page .row > [class*="col-"], .rspbld-pages .rspbld-page-container .row-fluid > [class*="span"], .rspbld-pages .rspbld-page-container .row > [class*="col-"], .rspbld-page .row-fluid > .container > [class*="span"], .rspbld-page .row > .container > [class*="col-"], .rspbld-pages .rspbld-page-container .row-fluid > .container > [class*="span"], .rspbld-pages .rspbld-page-container .row > .container > [class*="col-"] {
+		background-attachment: initial !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) and (-webkit-min-device-pixel-ratio: 2) {
+	.rspbld-page .row-fluid, .rspbld-page .row, .rspbld-pages .rspbld-page-container .row-fluid, .rspbld-pages .rspbld-page-container .row, .rspbld-page .row-fluid > [class*="span"], .rspbld-page .row > [class*="col-"], .rspbld-pages .rspbld-page-container .row-fluid > [class*="span"], .rspbld-pages .rspbld-page-container .row > [class*="col-"], .rspbld-page .row-fluid > .container > [class*="span"], .rspbld-page .row > .container > [class*="col-"], .rspbld-pages .rspbld-page-container .row-fluid > .container > [class*="span"], .rspbld-pages .rspbld-page-container .row > .container > [class*="col-"] {
+		background-attachment: initial !important;
+	}
+}
+
+/* General elements styling */
+.rspbld-image img {
+	width: 100%;
+}
+/* End general elements styling */

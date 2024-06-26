@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="general">
+		<field name="type" type="hidden" default="rspbld_youtube_background_video_box" class="rspbld-input"/>
+		<field name="category" type="hidden" default="box_elements" class="rspbld-input"/>
+	</fieldset>
+	<fieldset name="options">
+		<field name="video_url" type="text" default="wcsr5diHxo0" class="rspbld-input" label="COM_RSPAGEBUILDER_YOUTUBE_URL" description="COM_RSPAGEBUILDER_YOUTUBE_URL_DESC"/>
+		<field name="video_show_controls" type="radio" class="rspbld-field btn-group btn-group-yesno" default="0" label="COM_RSPAGEBUILDER_YOUTUBE_SHOW_CONTROLS" description="COM_RSPAGEBUILDER_YOUTUBE_SHOW_CONTROLS_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="video_auto_play" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_YOUTUBE_AUTO_PLAY" description="COM_RSPAGEBUILDER_YOUTUBE_AUTO_PLAY_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="video_loop" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_YOUTUBE_LOOP" description="COM_RSPAGEBUILDER_YOUTUBE_LOOP_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="video_volume" type="number" default="0" min="0" max="100" class="rspbld-input" label="COM_RSPAGEBUILDER_YOUTUBE_VOLUME" description="COM_RSPAGEBUILDER_YOUTUBE_VOLUME_DESC"/>
+		<field name="video_start_at" type="number" default="0" min="0" class="rspbld-input" label="COM_RSPAGEBUILDER_YOUTUBE_START_AT" description="COM_RSPAGEBUILDER_YOUTUBE_START_AT_DESC"/>
+		<field name="video_stop_at" type="number" min="0" class="rspbld-input" label="COM_RSPAGEBUILDER_YOUTUBE_STOP_AT" description="COM_RSPAGEBUILDER_YOUTUBE_STOP_AT_DESC"/>
+		<field name="video_quality" type="list" default="small" class="rspbld-input" label="COM_RSPAGEBUILDER_YOUTUBE_QUALITY" description="COM_RSPAGEBUILDER_YOUTUBE_QUALITY_DESC">
+			<option value="small">COM_RSPAGEBUILDER_SMALL</option>
+			<option value="medium">COM_RSPAGEBUILDER_MEDIUM</option>
+			<option value="large">COM_RSPAGEBUILDER_LARGE</option>
+			<option value="hd720">COM_RSPAGEBUILDER_HD720</option>
+			<option value="hd1080">COM_RSPAGEBUILDER_HD1080</option>
+			<option value="highres">COM_RSPAGEBUILDER_HIGH_RESOLUTION</option>
+		</field>
+		<field name="box_background_image" type="uploadimage" default="media/com_rspagebuilder/images/sample/1920x960-1.jpg" class="rspbld-input" label="COM_RSPAGEBUILDER_BOX_BACKGROUND_IMAGE" description="COM_RSPAGEBUILDER_BOX_BACKGROUND_IMAGE_DESC" addfieldpath="administrator/components/com_rspagebuilder/models/fields/"/>
+		<field name="box_background_repeat" type="list" default="no-repeat" class="rspbld-input" label="COM_RSPAGEBUILDER_BOX_BACKGROUND_REPEAT" description="COM_RSPAGEBUILDER_BOX_BACKGROUND_REPEAT_DESC">
+			<option value="no-repeat">COM_RSPAGEBUILDER_BACKGROUND_REPEAT_NO</option>
+			<option value="repeat">COM_RSPAGEBUILDER_BACKGROUND_REPEAT_ALL</option>
+			<option value="repeat-x">COM_RSPAGEBUILDER_BACKGROUND_REPEAT_HORIZONTAL</option>
+			<option value="repeat-y">COM_RSPAGEBUILDER_BACKGROUND_REPEAT_VERTICAL</option>
+		</field>
+		<field name="box_background_size" type="list" default="cover" class="rspbld-input" label="COM_RSPAGEBUILDER_BOX_BACKGROUND_SIZE" description="COM_RSPAGEBUILDER_BOX_BACKGROUND_SIZE_DESC">
+			<option value="cover">COM_RSPAGEBUILDER_BACKGROUND_SIZE_COVER</option>
+			<option value="contain">COM_RSPAGEBUILDER_BACKGROUND_SIZE_CONTAIN</option>
+		</field>
+		<field name="box_background_attachment" type="list" default="fixed" class="rspbld-input" label="COM_RSPAGEBUILDER_BOX_BACKGROUND_ATTACHMENT" description="COM_RSPAGEBUILDER_BOX_BACKGROUND_ATTACHMENT_DESC">
+			<option value="inherit">COM_RSPAGEBUILDER_BACKGROUND_ATTACHMENT_INHERIT</option>
+			<option value="fixed">COM_RSPAGEBUILDER_BACKGROUND_ATTACHMENT_FIXED</option>
+			<option value="scroll">COM_RSPAGEBUILDER_BACKGROUND_ATTACHMENT_SCROLL</option>
+		</field>
+		<field name="box_background_position" type="list" default="0%-0%" class="rspbld-input" label="COM_RSPAGEBUILDER_BOX_BACKGROUND_POSITION" description="COM_RSPAGEBUILDER_BOX_BACKGROUND_POSITION_DESC">
+			<option value="0%-0%">COM_RSPAGEBUILDER_BACKGROUND_POSITION_LEFT_TOP</option>
+			<option value="0%-50%">COM_RSPAGEBUILDER_BACKGROUND_POSITION_LEFT_CENTER</option>
+			<option value="0%-100%">COM_RSPAGEBUILDER_BACKGROUND_POSITION_LEFT_BOTTOM</option>
+			<option value="50%-0%">COM_RSPAGEBUILDER_BACKGROUND_POSITION_CENTER_TOP</option>
+			<option value="50%-50%">COM_RSPAGEBUILDER_BACKGROUND_POSITION_CENTER_CENTER</option>
+			<option value="50%-100%">COM_RSPAGEBUILDER_BACKGROUND_POSITION_CENTER_BOTTOM</option>
+			<option value="100%-0%">COM_RSPAGEBUILDER_BACKGROUND_POSITION_RIGHT_TOP</option>
+			<option value="100%-50%">COM_RSPAGEBUILDER_BACKGROUND_POSITION_RIGHT_CENTER</option>
+			<option value="100%-100%">COM_RSPAGEBUILDER_BACKGROUND_POSITION_RIGHT_BOTTOM</option>
+		</field>
+		<field name="title" type="text" default="YouTube Video Background Box Title" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE" description="COM_RSPAGEBUILDER_TITLE_DESC"/>
+		<field name="title_show" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_TITLE_SHOW" description="COM_RSPAGEBUILDER_TITLE_SHOW_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="title_heading" type="list" default="h2" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE_HEADING" description="COM_RSPAGEBUILDER_TITLE_HEADING_DESC">
+			<option value="h1">COM_RSPAGEBUILDER_HEADING_H1</option>
+			<option value="h2">COM_RSPAGEBUILDER_HEADING_H2</option>
+			<option value="h3">COM_RSPAGEBUILDER_HEADING_H3</option>
+			<option value="h4">COM_RSPAGEBUILDER_HEADING_H4</option>
+			<option value="h5">COM_RSPAGEBUILDER_HEADING_H5</option>
+			<option value="h6">COM_RSPAGEBUILDER_HEADING_H6</option>
+		</field>
+		<field name="title_font_size" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE_FONT_SIZE" description="COM_RSPAGEBUILDER_TITLE_FONT_SIZE_DESC"/>
+		<field name="title_font_weight" type="list" class="rspbld-input" default="" label="COM_RSPAGEBUILDER_TITLE_FONT_WEIGHT" description="COM_RSPAGEBUILDER_TITLE_FONT_WEIGHT_DESC">
+			<option value="">JNONE</option>
+			<option value="bold">COM_RSPAGEBUILDER_BOLD</option>
+			<option value="normal">COM_RSPAGEBUILDER_NORMAL</option>
+		</field>
+		<field name="title_text_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_TITLE_TEXT_COLOR" description="COM_RSPAGEBUILDER_TITLE_TEXT_COLOR_DESC"/>
+		<field name="title_margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE_MARGIN" description="COM_RSPAGEBUILDER_TITLE_MARGIN_DESC"/>
+		<field name="title_padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_TITLE_PADDING" description="COM_RSPAGEBUILDER_TITLE_PADDING_DESC"/>
+		<field name="subtitle" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE" description="COM_RSPAGEBUILDER_SUBTITLE_DESC"/>
+		<field name="subtitle_show" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_SUBTITLE_SHOW" description="COM_RSPAGEBUILDER_SUBTITLE_SHOW_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="subtitle_heading" type="list" default="h3" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE_HEADING" description="COM_RSPAGEBUILDER_SUBTITLE_HEADING_DESC">
+			<option value="h1">COM_RSPAGEBUILDER_HEADING_H1</option>
+			<option value="h2">COM_RSPAGEBUILDER_HEADING_H2</option>
+			<option value="h3">COM_RSPAGEBUILDER_HEADING_H3</option>
+			<option value="h4">COM_RSPAGEBUILDER_HEADING_H4</option>
+			<option value="h5">COM_RSPAGEBUILDER_HEADING_H5</option>
+			<option value="h6">COM_RSPAGEBUILDER_HEADING_H6</option>
+		</field>
+		<field name="subtitle_font_size" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE_FONT_SIZE" description="COM_RSPAGEBUILDER_SUBTITLE_FONT_SIZE_DESC"/>
+		<field name="subtitle_font_weight" type="list" class="rspbld-input" default="" label="COM_RSPAGEBUILDER_SUBTITLE_FONT_WEIGHT" description="COM_RSPAGEBUILDER_SUBTITLE_FONT_WEIGHT_DESC">
+			<option value="">JNONE</option>
+			<option value="bold">COM_RSPAGEBUILDER_BOLD</option>
+			<option value="normal">COM_RSPAGEBUILDER_NORMAL</option>
+		</field>
+		<field name="subtitle_text_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_SUBTITLE_TEXT_COLOR" description="COM_RSPAGEBUILDER_SUBTITLE_TEXT_COLOR_DESC"/>
+		<field name="subtitle_margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE_MARGIN" description="COM_RSPAGEBUILDER_SUBTITLE_MARGIN_DESC"/>
+		<field name="subtitle_padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_SUBTITLE_PADDING" description="COM_RSPAGEBUILDER_SUBTITLE_PADDING_DESC"/>
+		<field name="content" type="editor" height="350" default="Lorem ipsum dolor sit amet, dolor tollit eum et, id nobis argumentum vix. His quaeque patrioque philosophia ut, cu has facete everti inimicus. Ne mei dissentiet eloquentiam contentiones, et quot delenit torquatos usu. Alii omittam assentior eam ad. Populo invidunt invenire per an." label="COM_RSPAGEBUILDER_CONTENT" description="COM_RSPAGEBUILDER_CONTENT_DESC"/>
+		<field name="content_text_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_CONTENT_TEXT_COLOR" description="COM_RSPAGEBUILDER_CONTENT_TEXT_COLOR_DESC"/>
+		<field name="content_margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_CONTENT_MARGIN" description="COM_RSPAGEBUILDER_CONTENT_MARGIN_DESC"/>
+		<field name="content_padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_CONTENT_PADDING" description="COM_RSPAGEBUILDER_CONTENT_PADDING_DESC"/>
+		<field name="box_height" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_BOX_HEIGHT" description="COM_RSPAGEBUILDER_BOX_HEIGHT_DESC"/>
+		<field name="box_width" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_BOX_WIDTH" description="COM_RSPAGEBUILDER_BOX_WIDTH_DESC"/>
+		<field name="box_margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_BOX_MARGIN" description="COM_RSPAGEBUILDER_BOX_MARGIN_DESC"/>
+		<field name="box_padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_BOX_PADDING" description="COM_RSPAGEBUILDER_BOX_PADDING_DESC"/>
+		<field name="box_alignment" type="list" default="text-center" class="rspbld-input" label="COM_RSPAGEBUILDER_BOX_ALIGNMENT" description="COM_RSPAGEBUILDER_BOX_ALIGNMENT_DESC">
+			<option value="text-center">COM_RSPAGEBUILDER_CENTER</option>
+			<option value="text-left">COM_RSPAGEBUILDER_LEFT</option>
+			<option value="text-right">COM_RSPAGEBUILDER_RIGHT</option>
+		</field>
+		<field name="class" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_CSS_CLASS" description="COM_RSPAGEBUILDER_CSS_CLASS_DESC"/>
+		<field name="publish" type="radio" class="rspbld-field btn-group btn-group-yesno" label="COM_RSPAGEBUILDER_PUBLISH" description="COM_RSPAGEBUILDER_PUBLISH_DESC" default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+</form>

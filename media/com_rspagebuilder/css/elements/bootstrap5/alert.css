@@ -1,0 +1,30 @@
+
+/* Alert Bootstrap v5 */
+
+.rspbld-alert .alert {
+	border-radius: .25rem;
+}
+.rspbld-alert .alert.alert-danger, .rspbld-alert .alert.alert-error {
+	background-color: #f8d7da;
+	border-color: #f8d7da;
+	color: #721c24;
+}
+.rspbld-alert .alert.alert-info {
+	background-color: #d1ecf1;
+	border-color: #bee5eb;
+	color: #0c5460;
+}
+.rspbld-alert .alert.alert-success {
+	background-color: #d4edda;
+	border-color: #c3e6cb;
+	color: #155724;
+}
+.rspbld-alert .alert.alert-warning {
+	background-color: #fff3cd;
+	border-color: #ffeeba;
+	color: #856404;
+}
+
+.rspbld-alert .alert .btn-close {
+	filter: none;
+}

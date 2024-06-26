@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="advanced" label="COM_RSPAGEBUILDER_CONFIG_ADVANCED">
+		<field name="google_api_key" type="text" label="COM_RSPAGEBUILDER_CONFIG_FIELD_GOOGLE_API_KEY" description="COM_RSPAGEBUILDER_CONFIG_FIELD_GOOGLE_API_KEY_DESC" class="input-xlarge" />
+	</fieldset>
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC" >
+		<field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" filter="rules" validate="rules" component="com_rspagebuilder" section="component" />
+	</fieldset>
+</config>

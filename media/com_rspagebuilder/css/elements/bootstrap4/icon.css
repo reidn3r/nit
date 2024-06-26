@@ -1,0 +1,41 @@
+
+/* Icon Bootstrap v4 */
+
+.rspbld-icon * {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.rspbld-icon {
+	background-color: #9e9e0c;
+	border-radius: 4px;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 20px;
+	line-height: 1;
+	padding: 10px;
+	text-align: center;
+}
+.rspbld-icon.align-center {
+	left: 50%;
+	position: relative;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.rspbld-icon.align-left {
+	left: 0;
+	position: relative;
+}
+.rspbld-icon.align-right {
+	left: 100%;
+	position: relative;
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+.rspbld-icon i {
+	text-align: center;
+	height: 1em;
+	width: 1em;
+}

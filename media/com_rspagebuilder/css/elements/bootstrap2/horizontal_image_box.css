@@ -1,0 +1,21 @@
+
+/* Horizontal Image Box Bootstrap v2*/
+
+.rspbld-horizontal-image-box, .rspbld-horizontal-image-box .rspbld-content-container {
+	overflow: hidden;
+}
+.rspbld-horizontal-image-box .rspbld-image {
+	width: 40%;
+}
+.rspbld-horizontal-image-box .rspbld-image.pull-left {
+	margin: 0px 10px 0px 0px;
+}
+.rspbld-horizontal-image-box .rspbld-image.pull-right {
+	margin: 0px 0px 0px 10px;
+}
+.rspbld-horizontal-image-box .rspbld-title {
+	margin-top: 0px;
+}
+.rspbld-horizontal-image-box .rspbld-button {
+	margin-top: 10px;
+}

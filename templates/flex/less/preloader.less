@@ -1,0 +1,71 @@
+.sp-pre-loader {
+    background: @preloader_bg;
+    
+    // Clock loader
+    .sp-loader-clock {
+        border: 3px solid @preloader_tx;
+
+        &:after{
+            background-color: @preloader_tx;
+        }
+
+        &:before{
+            background-color: @preloader_tx;
+        }
+    }
+    // Circle Loader
+    .sp-loader-circle{
+
+        border: 4px solid fade(@preloader_tx, 40%);
+        
+        &:after{
+			border-top-color: @preloader_tx;
+		 
+        }
+    }
+	
+	
+	// Flip Loader
+	.loader-flip{
+		
+		  &:after{
+			background-color: fade(@preloader_tx, 80%);
+		}
+		
+	}
+	
+    // Bubble Loop Loader
+    .sp-loader-bubble-loop{
+        background-color: @preloader_tx;
+
+        &:before{
+            background-color: fade(@preloader_tx, 50%);          
+        }
+        &:after{
+            background-color: fade(@preloader_tx, 50%);
+        }
+    }
+    // Circle Loader Two
+    .circle-two > span,
+    .circle-two > span:before,
+        .circle-two > span:after {
+        border: 2px solid @preloader_tx;
+    }
+
+    // Audio Wave 2 Loader
+    .wave-two li {
+        background-color: @preloader_tx;
+    }
+
+    // Audio Wave Loader
+    .sp-loader-audio-wave {
+        background: linear-gradient(@preloader_tx, @preloader_tx) 0 50%, linear-gradient(@preloader_tx, @preloader_tx) 0.625em 50%, linear-gradient(@preloader_tx, @preloader_tx) 1.25em 50%, linear-gradient(@preloader_tx, @preloader_tx) 1.875em 50%, linear-gradient(@preloader_tx, @preloader_tx) 2.5em 50%;
+    }
+
+    // Loader With Logo
+    .sp-loader-with-logo{
+        .line{
+            background: @preloader_tx;
+        }
+    }
+}

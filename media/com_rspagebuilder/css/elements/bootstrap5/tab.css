@@ -1,0 +1,55 @@
+
+/* Tab Bootstrap v5 */
+
+.rspbld-tab .nav.nav-tabs {
+	background-color: var(--rspbld-tab-nav-bg-color);
+	border: 1px solid var(--rspbld-border-color-1);
+	border-bottom: 0;
+	border-radius: .25rem .25rem 0 0;
+	box-shadow: inset 0 1px var(--rspbld-body-bg), 0 2px 3px -3px rgba(var(--rspbld-bg-inverse-rgb), .15), inset 0 -4px 0 rgba(var(--rspbld-bg-inverse-rgb), .05), 0 0 3px rgba(var(--rspbld-bg-inverse-rgb), .04);
+	justify-content: normal;
+	margin: 0;
+	padding: 0;
+}
+.rspbld-tab .nav.nav-tabs .nav-item {
+	width: auto;
+}
+.rspbld-tab .nav.nav-tabs .nav-link {
+	border: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	box-shadow: -1px 0 0 rgba(var(--rspbld-bg-inverse-rgb), .05);
+	color: var(--rspbld-tab-nav-link-color);
+	outline: none;
+	padding: .75em 1em;
+	position: relative;
+}
+.rspbld-tab .nav.nav-tabs .nav-link:hover {
+	color: var(--rspbld-tab-nav-link-color);
+}
+.rspbld-tab .nav.nav-tabs .nav-link.active {
+	background-color: rgba(var(--rspbld-bg-inverse-rgb), 0.3);
+	background-image: linear-gradient(180deg,transparent,rgba(var(--rspbld-bg-inverse-rgb), .05));
+	box-shadow: inset 2px 0 1px -1px rgba(var(--rspbld-bg-inverse-rgb), .08),inset -2px 0 1px -1px rgba(var(--rspbld-bg-inverse-rgb), .08),inset 0 1px 0 rgba(var(--rspbld-bg-inverse-rgb), .02);
+	color: var(--rspbld-tab-nav-link-color);
+}
+.rspbld-tab .nav.nav-tabs .nav-link.active:after {
+	background-color: var(--rspbld-tab-nav-link-color);
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	right: 0;
+	height: 5px;
+	opacity: .8;
+}
+.rspbld-tab .nav-tabs + .tab-content {
+	background-color: var(--rspbld-body-bg);
+	border: 1px solid var(--rspbld-border-color-1);
+	border-radius: 0 0 .25rem .25rem;
+	box-shadow: 0 0 3px rgba(var(--rspbld-bg-inverse-rgb), .04);
+	padding: 15px;
+}
+.rspbld-tab .tab-content .tab-pane > p:last-of-type {
+	margin-bottom: 0;
+}

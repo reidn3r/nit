@@ -1,0 +1,10 @@
+
+/* Google Map Bootstrap v5 */
+
+.rspbld-google-map .map {
+	height: 250px;
+	width: 100%;
+}
+.rspbld-google-map .rspbld-infowindow .rspbld-title, .rspbld-google-map .rspbld-infowindow .rspbld-content {
+	color: var(--rspbld-title-color);
+}

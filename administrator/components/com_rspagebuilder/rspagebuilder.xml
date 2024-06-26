@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.2" method="upgrade">
+	<name>COM_RSPAGEBUILDER</name>
+	<description>COM_RSPAGEBUILDER_DESC</description>
+	<version>2.0.15</version>
+	<creationDate>November 2016</creationDate>
+	<author>RSJoomla!</author>
+	<authorEmail>support@rsjoomla.com</authorEmail>
+	<authorUrl>www.rsjoomla.com</authorUrl>
+	<copyright>copyright (C) 2016 - 2021 RSJoomla.com - All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<scriptfile>script.rspagebuilder.php</scriptfile>
+	
+	<updateservers>
+        <server type="extension" priority="1" name="RSPageBuilder!">https://www.rsjoomla.com/updates/free/com_rspagebuilder/Component/com_rspagebuilder.xml</server>
+    </updateservers>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/mysql/install.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/mysql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<files folder="site">
+		<folder>helpers</folder>
+		<folder>layouts</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<filename>rspagebuilder.php</filename>
+	</files>
+	<media destination="com_rspagebuilder" folder="media">
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB/en-GB.com_rspagebuilder.ini</language>
+	</languages>
+
+	<administration>
+		<menu>COM_RSPAGEBUILDER</menu>
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>rspagebuilder.php</filename>
+		</files>
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_rspagebuilder.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_rspagebuilder.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

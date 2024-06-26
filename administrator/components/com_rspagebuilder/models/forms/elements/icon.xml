@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="general">
+		<field name="type" type="hidden" default="rspbld_icon" class="rspbld-input"/>
+		<field name="category" type="hidden" default="basic_elements" class="rspbld-input"/>
+	</fieldset>
+	<fieldset name="options">
+		<field name="icon" type="iconslist" default="joomla" class="rspbld-input" label="COM_RSPAGEBUILDER_ICON" description="COM_RSPAGEBUILDER_ICON_DESC" addfieldpath="administrator/components/com_rspagebuilder/models/fields"/>
+		<field name="url" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_URL" description="COM_RSPAGEBUILDER_URL_DESC"/>
+		<field name="target" type="list" class="rspbld-input" label="COM_RSPAGEBUILDER_TARGET" description="COM_RSPAGEBUILDER_TARGET_DESC">
+			<option value="">COM_RSPAGEBUILDER_TARGET_SAME_WINDOW</option>
+			<option value="_blank">COM_RSPAGEBUILDER_TARGET_NEW_WINDOW</option>
+		</field>
+		<field name="alignment" type="list" default="align-center" class="rspbld-input" label="COM_RSPAGEBUILDER_ALIGNMENT" description="COM_RSPAGEBUILDER_ALIGNMENT_DESC">
+			<option value="align-center">COM_RSPAGEBUILDER_CENTER</option>
+			<option value="align-left">COM_RSPAGEBUILDER_LEFT</option>
+			<option value="align-right">COM_RSPAGEBUILDER_RIGHT</option>
+		</field>
+		<field name="font_size" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_FONT_SIZE" description="COM_RSPAGEBUILDER_FONT_SIZE_DESC"/>
+		<field name="color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_COLOR" description="COM_RSPAGEBUILDER_COLOR_DESC"/>
+		<field name="background_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_BACKGROUND_COLOR" description="COM_RSPAGEBUILDER_BACKGROUND_COLOR_DESC"/>
+		<field name="border_style" type="list" default="" class="rspbld-input" label="COM_RSPAGEBUILDER_BORDER_STYLE" description="COM_RSPAGEBUILDER_BORDER_STYLE_DESC">
+			<option value="">COM_RSPAGEBUILDER_BORDER_STYLE_NONE</option>
+			<option value="solid">COM_RSPAGEBUILDER_BORDER_STYLE_SOLID</option>
+			<option value="dashed">COM_RSPAGEBUILDER_BORDER_STYLE_DASHED</option>
+			<option value="dotted">COM_RSPAGEBUILDER_BORDER_STYLE_DOTTED</option>
+			<option value="double">COM_RSPAGEBUILDER_BORDER_STYLE_DOUBLE</option>
+			<option value="groove">COM_RSPAGEBUILDER_BORDER_STYLE_GROOVE</option>
+			<option value="ridge">COM_RSPAGEBUILDER_BORDER_STYLE_RIDGE</option>
+			<option value="inset">COM_RSPAGEBUILDER_BORDER_STYLE_INSET</option>
+			<option value="outset">COM_RSPAGEBUILDER_BORDER_STYLE_OUTSET</option>
+		</field>
+		<field name="border_width" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_BORDER_WIDTH" description="COM_RSPAGEBUILDER_BORDER_WIDTH_DESC"/>
+		<field name="border_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_BORDER_COLOR" description="COM_RSPAGEBUILDER_BORDER_COLOR_DESC"/>
+		<field name="border_radius" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_BORDER_RADIUS" description="COM_RSPAGEBUILDER_BORDER_RADIUS_DESC"/>
+		<field name="margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_MARGIN" description="COM_RSPAGEBUILDER_MARGIN_DESC"/>
+		<field name="padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_PADDING" description="COM_RSPAGEBUILDER_PADDING_DESC"/>
+		<field name="class" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_CSS_CLASS" description="COM_RSPAGEBUILDER_CSS_CLASS_DESC"/>
+		<field name="publish" type="radio" class="rspbld-field btn-group btn-group-yesno" label="COM_RSPAGEBUILDER_PUBLISH" description="COM_RSPAGEBUILDER_PUBLISH_DESC" default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+</form>

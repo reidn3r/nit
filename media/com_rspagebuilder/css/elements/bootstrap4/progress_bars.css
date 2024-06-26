@@ -1,0 +1,79 @@
+
+/* Progress Bars Bootstrap v4 */
+
+.rspbld-progress-bars {
+	--progress-height: 25px;
+	--progress-spacing: 15px;
+}
+.rspbld-progress-bars .progress {
+	height: var(--progress-height);
+	margin-bottom: var(--progress-spacing);
+}
+.rspbld-progress-bars .progress:last-of-type {
+	margin-bottom: 0;
+}
+.rspbld-progress-bars .progress .progress-bar {
+	background-image: none !important;
+	background-repeat: none !important;
+	color: #ffffff;
+	height: 100%;
+	overflow: hidden;
+	text-shadow: none !important;
+}
+.rspbld-progress-bars.animate .progress .progress-bar {
+	opacity: 0;
+}
+.rspbld-progress-bars .progress-bar .rspbld-item-title {
+	font-size: 14px;
+	height: 100%;
+	line-height: var(--progress-height);
+	text-align: center;
+}
+
+/* Vertical orientation */
+.rspbld-progress-bars.vertical .progress-container {
+	height: 25vh;
+	position: relative;
+}
+.rspbld-progress-bars.vertical .progress {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-bottom: 0;
+	width: 25vh;
+	transform: rotate(-90deg) translateY(100%);
+	transform-origin: bottom left;
+}
+.rspbld-progress-bars.vertical .progress:nth-of-type(2) {
+	left: calc(var(--progress-height) + var(--progress-spacing));
+}
+.rspbld-progress-bars.vertical .progress:nth-of-type(3) {
+	left: calc((var(--progress-height) + var(--progress-spacing)) * 2);
+}
+.rspbld-progress-bars.vertical .progress:nth-of-type(4) {
+	left: calc((var(--progress-height) + var(--progress-spacing)) * 3);
+}
+.rspbld-progress-bars.vertical .progress:nth-of-type(5) {
+	left: calc((var(--progress-height) + var(--progress-spacing)) * 4);
+}
+.rspbld-progress-bars.vertical .progress:nth-of-type(6) {
+	left: calc((var(--progress-height) + var(--progress-spacing)) * 5);
+}
+.rspbld-progress-bars.vertical .progress:nth-of-type(7) {
+	left: calc((var(--progress-height) + var(--progress-spacing)) * 6);
+}
+.rspbld-progress-bars.vertical .progress:nth-of-type(8) {
+	left: calc((var(--progress-height) + var(--progress-spacing)) * 7);
+}
+.rspbld-progress-bars.vertical .progress:nth-of-type(9) {
+	left: calc((var(--progress-height) + var(--progress-spacing)) * 8);
+}
+.rspbld-progress-bars.vertical .progress:nth-of-type(10) {
+	left: calc((var(--progress-height) + var(--progress-spacing)) * 9);
+}
+.rspbld-progress-bars.vertical .progress:nth-of-type(11) {
+	left: calc((var(--progress-height) + var(--progress-spacing)) * 10);
+}
+.rspbld-progress-bars.vertical .progress:nth-of-type(12) {
+	left: calc((var(--progress-height) + var(--progress-spacing)) * 11);
+}

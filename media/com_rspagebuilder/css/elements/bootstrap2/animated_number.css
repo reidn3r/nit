@@ -1,0 +1,10 @@
+
+/* Animated Number Bootstrap v2 */
+
+.rspbld-animated-number .rspbld-number {
+	background-color: #a12222;
+	color: #fff;
+	font-size: 24px;
+	display: inline-block;
+	padding: 15px;
+}

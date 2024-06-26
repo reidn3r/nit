@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="general">
+		<field name="type" type="hidden" default="column" class="rspbld-input"/>
+		<field name="grid" type="hidden" default="12" class="rspbld-input"/>
+	</fieldset>
+	<fieldset name="options">
+		<field name="title" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_TITLE" description="COM_RSPAGEBUILDER_COLUMN_TITLE_DESC"/>
+		<field name="title_heading" type="list" default="h2" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_TITLE_HEADING" description="COM_RSPAGEBUILDER_COLUMN_TITLE_HEADING_DESC">
+			<option value="h1">COM_RSPAGEBUILDER_HEADING_H1</option>
+			<option value="h2">COM_RSPAGEBUILDER_HEADING_H2</option>
+			<option value="h3">COM_RSPAGEBUILDER_HEADING_H3</option>
+			<option value="h4">COM_RSPAGEBUILDER_HEADING_H4</option>
+			<option value="h5">COM_RSPAGEBUILDER_HEADING_H5</option>
+			<option value="h6">COM_RSPAGEBUILDER_HEADING_H6</option>
+		</field>
+		<field name="title_font_size" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_TITLE_FONT_SIZE" description="COM_RSPAGEBUILDER_COLUMN_TITLE_FONT_SIZE_DESC"/>
+		<field name="title_font_weight" type="list" class="rspbld-input" default="" label="COM_RSPAGEBUILDER_COLUMN_TITLE_FONT_WEIGHT" description="COM_RSPAGEBUILDER_COLUMN_TITLE_FONT_WEIGHT_DESC">
+			<option value="">JNONE</option>
+			<option value="bold">COM_RSPAGEBUILDER_BOLD</option>
+			<option value="normal">COM_RSPAGEBUILDER_NORMAL</option>
+		</field>
+		<field name="title_text_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_COLUMN_TITLE_TEXT_COLOR" description="COM_RSPAGEBUILDER_COLUMN_TITLE_TEXT_COLOR_DESC"/>
+		<field name="title_margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_TITLE_MARGIN" description="COM_RSPAGEBUILDER_COLUMN_TITLE_MARGIN_DESC"/>
+		<field name="title_padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_TITLE_PADDING" description="COM_RSPAGEBUILDER_COLUMN_TITLE_PADDING_DESC"/>
+		<field name="subtitle" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_SUBTITLE" description="COM_RSPAGEBUILDER_COLUMN_SUBTITLE_DESC"/>
+		<field name="subtitle_heading" type="list" default="h3" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_SUBTITLE_HEADING" description="COM_RSPAGEBUILDER_COLUMN_SUBTITLE_HEADING_DESC">
+			<option value="h1">COM_RSPAGEBUILDER_HEADING_H1</option>
+			<option value="h2">COM_RSPAGEBUILDER_HEADING_H2</option>
+			<option value="h3">COM_RSPAGEBUILDER_HEADING_H3</option>
+			<option value="h4">COM_RSPAGEBUILDER_HEADING_H4</option>
+			<option value="h5">COM_RSPAGEBUILDER_HEADING_H5</option>
+			<option value="h6">COM_RSPAGEBUILDER_HEADING_H6</option>
+		</field>
+		<field name="subtitle_font_size" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_SUBTITLE_FONT_SIZE" description="COM_RSPAGEBUILDER_COLUMN_SUBTITLE_FONT_SIZE_DESC"/>
+		<field name="subtitle_font_weight" type="list" class="rspbld-input" default="" label="COM_RSPAGEBUILDER_COLUMN_SUBTITLE_FONT_WEIGHT" description="COM_RSPAGEBUILDER_COLUMN_SUBTITLE_FONT_WEIGHT_DESC">
+			<option value="">JNONE</option>
+			<option value="bold">COM_RSPAGEBUILDER_BOLD</option>
+			<option value="normal">COM_RSPAGEBUILDER_NORMAL</option>
+		</field>
+		<field name="subtitle_text_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_COLUMN_SUBTITLE_TEXT_COLOR" description="COM_RSPAGEBUILDER_COLUMN_SUBTITLE_TEXT_COLOR_DESC"/>
+		<field name="subtitle_margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_SUBTITLE_MARGIN" description="COM_RSPAGEBUILDER_COLUMN_SUBTITLE_MARGIN_DESC"/>
+		<field name="subtitle_padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_SUBTITLE_PADDING" description="COM_RSPAGEBUILDER_COLUMN_SUBTITLE_PADDING_DESC"/>
+		<field name="heading_alignment" type="list" default="text-left" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_HEADING_ALIGNMENT" description="COM_RSPAGEBUILDER_COLUMN_HEADING_ALIGNMENT_DESC">
+			<option value="text-left">COM_RSPAGEBUILDER_LEFT</option>
+			<option value="text-center">COM_RSPAGEBUILDER_CENTER</option>
+			<option value="text-right">COM_RSPAGEBUILDER_RIGHT</option>
+		</field>
+		<field name="text_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_COLUMN_TEXT_COLOR" description="COM_RSPAGEBUILDER_COLUMN_TEXT_COLOR_DESC"/>
+		<field name="background_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_COLUMN_BACKGROUND_COLOR" description="COM_RSPAGEBUILDER_COLUMN_BACKGROUND_COLOR_DESC"/>
+		<field name="animation_type" type="list" default="" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_ANIMATION_TYPE" description="COM_RSPAGEBUILDER_COLUMN_ANIMATION_TYPE_DESC">
+			<option value="">COM_RSPAGEBUILDER_ANIMATION_TYPE_NO_ANIMATION</option>
+			<option value="bounce">COM_RSPAGEBUILDER_ANIMATION_TYPE_BOUNCE</option>
+			<option value="bounce-bottom">COM_RSPAGEBUILDER_ANIMATION_TYPE_BOUNCE_BOTTOM</option>
+			<option value="bounce-left">COM_RSPAGEBUILDER_ANIMATION_TYPE_BOUNCE_LEFT</option>
+			<option value="bounce-right">COM_RSPAGEBUILDER_ANIMATION_TYPE_BOUNCE_RIGHT</option>
+			<option value="bounce-top">COM_RSPAGEBUILDER_ANIMATION_TYPE_BOUNCE_TOP</option>
+			<option value="fade">COM_RSPAGEBUILDER_ANIMATION_TYPE_FADE</option>
+			<option value="fade-bottom">COM_RSPAGEBUILDER_ANIMATION_TYPE_FADE_BOTTOM</option>
+			<option value="fade-left">COM_RSPAGEBUILDER_ANIMATION_TYPE_FADE_LEFT</option>
+			<option value="fade-right">COM_RSPAGEBUILDER_ANIMATION_TYPE_FADE_RIGHT</option>
+			<option value="fade-top">COM_RSPAGEBUILDER_ANIMATION_TYPE_FADE_TOP</option>
+			<option value="flip-horizontal">COM_RSPAGEBUILDER_ANIMATION_TYPE_FLIP_HORIZONTAL</option>
+			<option value="flip-vertical">COM_RSPAGEBUILDER_ANIMATION_TYPE_FLIP_VERTICAL</option>
+			<option value="grow">COM_RSPAGEBUILDER_ANIMATION_TYPE_GROW</option>
+			<option value="pulse">COM_RSPAGEBUILDER_ANIMATION_TYPE_PULSE</option>
+			<option value="roll-left">COM_RSPAGEBUILDER_ANIMATION_TYPE_ROLL_LEFT</option>
+			<option value="roll-right">COM_RSPAGEBUILDER_ANIMATION_TYPE_ROLL_RIGHT</option>
+			<option value="rotate">COM_RSPAGEBUILDER_ANIMATION_TYPE_ROTATE</option>
+			<option value="rotate-bottom-left">COM_RSPAGEBUILDER_ANIMATION_TYPE_ROTATE_BOTTOM_LEFT</option>
+			<option value="rotate-bottom-right">COM_RSPAGEBUILDER_ANIMATION_TYPE_ROTATE_BOTTOM_RIGHT</option>
+			<option value="rotate-top-left">COM_RSPAGEBUILDER_ANIMATION_TYPE_ROTATE_TOP_LEFT</option>
+			<option value="rotate-top-right">COM_RSPAGEBUILDER_ANIMATION_TYPE_ROTATE_TOP_RIGHT</option>
+			<option value="shake-horizontal">COM_RSPAGEBUILDER_ANIMATION_TYPE_SHAKE_HORIZONTAL</option>
+			<option value="shake-vertical">COM_RSPAGEBUILDER_ANIMATION_TYPE_SHAKE_VERTICAL</option>
+			<option value="speed-left">COM_RSPAGEBUILDER_ANIMATION_TYPE_SPEED_LEFT</option>
+			<option value="speed-right">COM_RSPAGEBUILDER_ANIMATION_TYPE_SPEED_RIGHT</option>
+			<option value="swing">COM_RSPAGEBUILDER_ANIMATION_TYPE_SWING</option>
+			<option value="wiggle">COM_RSPAGEBUILDER_ANIMATION_TYPE_WIGGLE</option>
+			<option value="wobble">COM_RSPAGEBUILDER_ANIMATION_TYPE_WOBBLE</option>
+			<option value="tada">COM_RSPAGEBUILDER_ANIMATION_TYPE_TADA</option>
+		</field>
+		<field name="animation_duration" type="number" default="500" min="100" max="3000" step="100" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_ANIMATION_DURATION" description="COM_RSPAGEBUILDER_COLUMN_ANIMATION_DURATION_DESC"/>
+		<field name="animation_delay" type="number" default="0" min="0" max="3000" step="100" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_ANIMATION_DELAY" description="COM_RSPAGEBUILDER_COLUMN_ANIMATION_DELAY_DESC"/>
+		<field name="margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_MARGIN" description="COM_RSPAGEBUILDER_COLUMN_MARGIN_DESC"/>
+		<field name="padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_PADDING" description="COM_RSPAGEBUILDER_COLUMN_PADDING_DESC"/>
+		<field name="class" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_CSS_CLASS" description="COM_RSPAGEBUILDER_COLUMN_CSS_CLASS_DESC"/>
+		<field name="id" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_COLUMN_CSS_ID" description="COM_RSPAGEBUILDER_COLUMN_CSS_ID_DESC"/>
+		<field name="publish" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_COLUMN_PUBLISH" description="COM_RSPAGEBUILDER_COLUMN_PUBLISH_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+</form>

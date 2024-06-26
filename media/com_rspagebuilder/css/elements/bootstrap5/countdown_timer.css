@@ -1,0 +1,32 @@
+
+/* Countdown Timer Bootstrap v5*/
+
+.rspbld-countdown-timer {
+	overflow: hidden;
+}
+.rspbld-countdown-timer .rspbld-inner {
+	display: inline-block;
+}
+.rspbld-countdown-timer.text-center .rspbld-inner {
+	margin: 0 auto;
+}
+.rspbld-countdown-timer .rspbld-inner .wrapper {
+	background-color: rgba(var(--rspbld-bg-inverse-rgb), 0.1);
+	border: 1px solid var(--rspbld-border-color-1);
+	border-radius: 4px;
+	display: inline-block;
+	margin: 10px;
+	padding: 20px;
+	width: 100px;
+}
+.rspbld-countdown-timer .rspbld-inner .wrapper .countdown {
+	font-size: 20px;
+	line-height: 1.4;
+}
+.rspbld-countdown-timer .rspbld-inner .wrapper .details {
+	font-size: 16px;
+	line-height: 1.4;
+}
+.rspbld-countdown-timer .rspbld-inner.horizontal-details .wrapper span {
+	display: block;
+}

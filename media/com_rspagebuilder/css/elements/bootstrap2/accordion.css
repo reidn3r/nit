@@ -1,0 +1,29 @@
+
+/* Accordion Bootstrap v2 */
+
+.rspbld-accordion .accordion-group {
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+	margin-bottom: 6px;
+	overflow: hidden;
+}
+.rspbld-accordion .accordion-heading .accordion-toggle {
+	background-color: #ffffff;
+	display: block;
+	font-size: 14px;
+	padding: 10px 15px;
+}
+.rspbld-accordion .accordion-heading .accordion-toggle:hover, .rspbld-accordion .accordion-heading .accordion-toggle:focus {
+	outline: none;
+}
+.rspbld-accordion .accordion-heading .accordion-toggle i {
+	font-size: 14px;
+}
+.rspbld-accordion .accordion-inner {
+	background-color: #ffffff;
+	border-top: 1px solid #cccccc;
+	padding: 15px;
+}

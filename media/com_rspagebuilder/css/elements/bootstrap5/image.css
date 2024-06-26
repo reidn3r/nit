@@ -1,0 +1,80 @@
+
+/* Image Bootstrap v5 */
+
+.rspbld-image.text-center {
+	position: relative;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.rspbld-image.text-left {
+	position: relative;
+	left: 0;
+}
+.rspbld-image.text-right {
+	position: relative;
+	left: 100%;
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+.rspbld-image.text-center img, .rspbld-image.text-left img, .rspbld-image.text-right img {
+	width: auto;
+	max-width: 100%;
+}
+.rspbld-image .rspbld-magnific-popup {
+	display: block;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.rspbld-image .rspbld-magnific-popup:before {
+	background-color: #ffffff;
+	content: '';
+	opacity: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	-webkit-transition: opacity .2s linear;
+	-moz-transition: opacity .2s linear;
+	transition: opacity .2s linear;
+}
+.rspbld-image .rspbld-magnific-popup:after {
+	color: #000000;
+	content: '\f002';
+	font-family: 'FontAwesomeSolid';
+	font-size: 2em;
+	opacity: 0;
+	position: absolute;
+	height: 2em;
+	line-height: 2em;
+	width: 2em;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transition: opacity .2s linear;
+	-moz-transition: opacity .2s linear;
+	transition: opacity .2s linear;
+}
+.rspbld-image .rspbld-magnific-popup:hover:before {
+	opacity: 0.5;
+}
+.rspbld-image .rspbld-magnific-popup:hover:after {
+	opacity: 1;
+}
+.rspbld-image .rspbld-image-caption {
+	background-color: #e0e0e0;
+	display: block;
+	font-weight: bold;
+	padding: 4px;
+}

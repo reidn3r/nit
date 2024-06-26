@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="general">
+		<field name="type" type="hidden" default="rspbld_button" class="rspbld-input"/>
+		<field name="category" type="hidden" default="bootstrap_elements" class="rspbld-input"/>
+	</fieldset>
+	<fieldset name="options">
+		<field name="text" type="text" default="Button Text" class="rspbld-input" label="COM_RSPAGEBUILDER_TEXT" description="COM_RSPAGEBUILDER_TEXT_DESC"/>
+		<field name="text_font_size" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_FONT_SIZE" description="COM_RSPAGEBUILDER_FONT_SIZE_DESC"/>
+		<field name="text_font_weight" type="list" class="rspbld-input" default="" label="COM_RSPAGEBUILDER_FONT_WEIGHT" description="COM_RSPAGEBUILDER_FONT_WEIGHT_DESC">
+			<option value="">JNONE</option>
+			<option value="bold">COM_RSPAGEBUILDER_BOLD</option>
+			<option value="normal">COM_RSPAGEBUILDER_NORMAL</option>
+		</field>
+		<field name="text_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_TEXT_COLOR" description="COM_RSPAGEBUILDER_TEXT_COLOR_DESC"/>
+		<field name="url" type="text" default="https://www.rsjoomla.com" class="rspbld-input" label="COM_RSPAGEBUILDER_URL" description="COM_RSPAGEBUILDER_URL_DESC"/>
+		<field name="target" type="list" default="_blank" class="rspbld-input" label="COM_RSPAGEBUILDER_TARGET" description="COM_RSPAGEBUILDER_TARGET_DESC">
+			<option value="">COM_RSPAGEBUILDER_TARGET_SAME_WINDOW</option>
+			<option value="_blank">COM_RSPAGEBUILDER_TARGET_NEW_WINDOW</option>
+		</field>
+		<field name="icon" type="iconslist" default="joomla" class="rspbld-input" label="COM_RSPAGEBUILDER_ICON" description="COM_RSPAGEBUILDER_ICON_DESC" addfieldpath="administrator/components/com_rspagebuilder/models/fields" />
+		<field name="icon_font_size" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_ICON_FONT_SIZE" description="COM_RSPAGEBUILDER_ICON_FONT_SIZE_DESC"/>
+		<field name="icon_color" type="color" class="rspbld-input color" label="COM_RSPAGEBUILDER_ICON_COLOR" description="COM_RSPAGEBUILDER_ICON_COLOR_DESC"/>
+		<field name="button_size" type="list" default="" class="rspbld-input" label="COM_RSPAGEBUILDER_SIZE" description="COM_RSPAGEBUILDER_SIZE_DESC">
+			<option value="">COM_RSPAGEBUILDER_DEFAULT</option>
+			<option value="mini">COM_RSPAGEBUILDER_MINI</option>
+			<option value="small">COM_RSPAGEBUILDER_SMALL</option>
+			<option value="large">COM_RSPAGEBUILDER_LARGE</option>
+		</field>
+		<field name="button_type" type="list" default="default" class="rspbld-input" label="COM_RSPAGEBUILDER_TYPE" description="COM_RSPAGEBUILDER_TYPE_DESC">
+			<option value="default">COM_RSPAGEBUILDER_DEFAULT</option>
+			<option value="primary">COM_RSPAGEBUILDER_PRIMARY</option>
+			<option value="secondary">COM_RSPAGEBUILDER_SECONDARY</option>
+			<option value="success">COM_RSPAGEBUILDER_SUCCESS</option>
+			<option value="info">COM_RSPAGEBUILDER_INFO</option>
+			<option value="warning">COM_RSPAGEBUILDER_WARNING</option>
+			<option value="danger">COM_RSPAGEBUILDER_DANGER</option>
+			<option value="inverse">COM_RSPAGEBUILDER_INVERSE</option>
+			<option value="link">COM_RSPAGEBUILDER_LINK</option>
+		</field>
+		<field name="inline" type="radio" class="rspbld-field btn-group btn-group-yesno" default="1" label="COM_RSPAGEBUILDER_INLINE" description="COM_RSPAGEBUILDER_INLINE_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="alignment" type="list" default="text-left" class="rspbld-input" showon="inline:0" label="COM_RSPAGEBUILDER_ALIGNMENT" description="COM_RSPAGEBUILDER_ALIGNMENT_DESC">
+			<option value="text-center">COM_RSPAGEBUILDER_CENTER</option>
+			<option value="text-left">COM_RSPAGEBUILDER_LEFT</option>
+			<option value="text-right">COM_RSPAGEBUILDER_RIGHT</option>
+		</field>
+		<field name="button_full_width" type="radio" class="rspbld-field btn-group btn-group-yesno" default="0" label="COM_RSPAGEBUILDER_BUTTON_FULL_WIDTH" description="COM_RSPAGEBUILDER_BUTTON_FULL_WIDTH_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="margin" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_MARGIN" description="COM_RSPAGEBUILDER_MARGIN_DESC"/>
+		<field name="padding" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_PADDING" description="COM_RSPAGEBUILDER_PADDING_DESC"/>
+		<field name="class" type="text" class="rspbld-input" label="COM_RSPAGEBUILDER_CSS_CLASS" description="COM_RSPAGEBUILDER_CSS_CLASS_DESC"/>
+		<field name="publish" type="radio" class="rspbld-field btn-group btn-group-yesno" label="COM_RSPAGEBUILDER_PUBLISH" description="COM_RSPAGEBUILDER_PUBLISH_DESC" default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+</form>
